@@ -1,0 +1,162 @@
+/* Lambeijo Pet — pet shop de bairro. Cores tiradas de style.css (.ce-pet). */
+:root {
+  --cor-fundo: #f4f0ff;     /* lilás claro */
+  --cor-texto: #2c1f63;     /* roxo escuro, tinta principal */
+  --cor-marca: #2c1f63;     /* faixa da loja */
+  --cor-destaque: #5b3fd1;  /* roxo dos botões */
+  --cor-suave: #4a3f6b;     /* texto secundário (contraste 9:1 no lilás) */
+  --cor-lilas: #e1d9fb;     /* campo da capa e do horário */
+  --cor-coral: #ff8a5b;     /* faixa do leva e traz */
+  --cor-azul: #8fd3ff;
+  --cor-laranja: #ffc06b;
+  --cor-verde: #a7e3a1;
+  --cor-rodape: #1d1442;
+}
+
+::selection { background: var(--cor-laranja); color: var(--cor-texto); }
+
+h1, h2, h3 { color: var(--cor-texto); letter-spacing: -.02em; text-wrap: balance; }
+h2 { font-size: 1.625rem; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------- menu ---------- */
+.menu { background: var(--cor-lilas); color: var(--cor-texto); }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: -.01em; }
+.logo-selo {
+  display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--cor-destaque);
+}
+.logo-selo svg { width: 22px; height: 22px; }
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- capa ---------- */
+.capa { padding-top: 22px; padding-bottom: 0; background: var(--cor-lilas); }
+.capa h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.02; letter-spacing: -.035em; margin-bottom: 16px; }
+.selo-aberto {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 14px;
+  padding: 5px 12px; border-radius: 99px; background: #fff;
+  font-size: .875rem; font-weight: 700; color: #2f6b2a;
+}
+.ponto { width: 8px; height: 8px; border-radius: 50%; background: #3fa34d; }
+.capa-texto { max-width: 33ch; font-size: 1.0625rem; color: var(--cor-texto); margin-bottom: 6px; }
+
+.capa-pe { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px; }
+.capa-pe .bt { margin-bottom: 30px; }
+.capa-cao { width: 156px; height: auto; margin-right: -8px; flex: none; }
+
+.bt-pet {
+  background: var(--cor-destaque); color: #fff; border-radius: 99px;
+  padding: 12px 24px; font-weight: 700;
+}
+
+/* ---------- preços por porte ---------- */
+.precos { padding-top: 30px; padding-bottom: 28px; }
+.tabela-porte {
+  width: 100%; border-collapse: separate; border-spacing: 0 6px; margin: -6px 0 12px;
+  font-variant-numeric: tabular-nums;
+}
+.tabela-porte caption {
+  caption-side: bottom; text-align: left; padding-top: 4px;
+  font-size: .8125rem; font-weight: 600; color: var(--cor-suave);
+}
+.tabela-porte thead th {
+  padding: 0 0 2px; font-size: 1.125rem; font-weight: 800; text-align: right; color: var(--cor-destaque);
+}
+.tabela-porte tbody th, .tabela-porte td { background: #fff; padding: 10px 0; }
+.tabela-porte tbody th {
+  text-align: left; padding: 6px 6px 6px 8px; border-radius: 16px 0 0 16px;
+  font-size: .9375rem; font-weight: 700; line-height: 1.2;
+}
+.servico { display: flex; align-items: center; gap: 10px; }
+.tabela-porte td {
+  width: 46px; text-align: right; font-size: 1.0625rem; font-weight: 800; white-space: nowrap;
+}
+.tabela-porte td:last-child { padding-right: 12px; border-radius: 0 16px 16px 0; width: 58px; }
+
+.bola {
+  display: inline-grid; place-items: center; flex: none;
+  width: 38px; height: 38px; border-radius: 50%;
+}
+.bola svg { width: 20px; height: 20px; }
+.bola-azul { background: var(--cor-azul); }
+.bola-laranja { background: var(--cor-laranja); }
+.bola-verde { background: var(--cor-verde); width: 52px; height: 52px; }
+.bola-verde svg { width: 26px; height: 26px; }
+
+.vet {
+  display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: start;
+  margin-top: 12px; padding: 14px; border-radius: 22px; background: #e3f5e0;
+}
+.vet h3 { font-size: 1.0625rem; font-weight: 800; margin-bottom: 4px; }
+.vet p { margin: 0; font-size: .9375rem; color: var(--cor-suave); }
+
+/* ---------- leva e traz ---------- */
+.leva { position: relative; padding-top: 30px; padding-bottom: 28px; background: var(--cor-coral); }
+.leva-van { position: absolute; top: 34px; right: 10px; width: 156px; height: auto; }
+.leva h2 { max-width: 7.2em; min-height: 74px; font-size: 1.875rem; letter-spacing: -.03em; }
+.leva-texto { margin: 0; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- como é o banho ---------- */
+.banho { padding-top: 30px; padding-bottom: 28px; }
+.antes-depois { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.antes-depois figure { margin: 0; }
+.antes-depois svg { width: 100%; height: auto; }
+.antes-depois figcaption { margin-top: 4px; font-size: .9375rem; font-weight: 800; text-align: center; }
+
+.passos { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.passos li {
+  position: relative; padding-left: 26px; font-size: 1rem; line-height: 1.35; color: var(--cor-texto);
+}
+.passos li::before {
+  content: ""; position: absolute; left: 2px; top: 3px; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--cor-laranja);
+}
+.passos li:nth-child(2)::before { background: var(--cor-azul); }
+.passos li:nth-child(3)::before { background: var(--cor-verde); }
+.passos li:nth-child(4)::before { background: var(--cor-coral); }
+.passos strong { color: var(--cor-texto); }
+
+/* ---------- loja (faixa escura) ---------- */
+.loja { padding-top: 30px; padding-bottom: 28px; background: var(--cor-marca); color: #fff; }
+.loja h2 { color: #fff; }
+.prateleira { width: 100%; height: auto; margin-bottom: 8px; }
+.loja-lista { list-style: none; margin: 0 0 16px; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.loja-lista li {
+  display: flex; flex-direction: column; justify-content: space-between; gap: 4px;
+  padding: 8px 6px 10px; border-radius: 14px; background: #3d2f7a;
+  font-size: .8125rem; line-height: 1.25; text-align: center;
+}
+.loja-lista b { font-size: 1.0625rem; font-weight: 800; color: var(--cor-laranja); font-variant-numeric: tabular-nums; }
+.loja-nota { margin: 0; font-size: .9375rem; color: #e1d9fb; }
+
+/* ---------- depoimento ---------- */
+.depoimento { margin: 18px 0 0; padding: 16px 18px; border-radius: 22px; background: #fff; }
+.aspas { width: 30px; height: 23px; margin-bottom: 10px; }
+.depoimento blockquote { margin: 0 0 14px; }
+.depoimento blockquote p {
+  font-size: 1.1875rem; font-weight: 700; line-height: 1.28; letter-spacing: -.015em; color: var(--cor-texto); margin: 0;
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- horário e endereço ---------- */
+.onde { background: var(--cor-lilas); padding-top: 30px; padding-bottom: 30px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 7px 0; border-bottom: 1px solid #c9bdf2; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.horarios td { text-align: right; font-weight: 800; color: var(--cor-texto); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+.endereco { font-size: 1rem; margin-bottom: 18px; }
+.onde-acao { display: flex; align-items: center; gap: 16px; }
+.fone { margin: 0; line-height: 1.35; font-size: .875rem; font-weight: 600; color: var(--cor-suave); font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape { background: var(--cor-rodape); color: #e1d9fb; text-align: left; padding-top: 22px; padding-bottom: 22px; }
+.rodape p { margin-bottom: 6px; }
+.rodape-nome { font-size: 1.75rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--cor-laranja); }
+.rodape-fino { margin: 0; font-size: .8125rem; color: #bfb4e6; }

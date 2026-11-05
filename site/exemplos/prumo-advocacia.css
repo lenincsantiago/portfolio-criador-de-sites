@@ -1,0 +1,147 @@
+/* Prumo Advocacia — escritório de advocacia. Cores tiradas de style.css (.ce-advocacia). */
+:root {
+  --cor-fundo: #1b2333;     /* azul-marinho do escritório */
+  --cor-texto: #d9dde6;     /* texto claro sobre o marinho */
+  --cor-marca: #1b2333;     /* menu no mesmo marinho */
+  --cor-destaque: #c9a45c;  /* dourado: botão, selo, fio de prumo */
+  --cor-titulo: #f4efe4;    /* marfim dos títulos */
+  --cor-suave: #a6aec0;     /* texto secundário no marinho (7:1) */
+  --cor-fundo-escuro: #141a27;
+  --cor-papel: #f4efe4;     /* papel marfim das seções claras */
+  --cor-papel-2: #ebe4d6;
+  --cor-tinta: #1b2333;     /* texto sobre o papel */
+  --cor-tinta-suave: #4a5366;
+  --cor-ouro-escuro: #7a5a1e; /* dourado legível sobre o papel */
+  --cor-rodape: #10151f;
+  --serifa: Georgia, 'Times New Roman', serif;
+}
+
+::selection { background: var(--cor-destaque); color: var(--cor-tinta); }
+
+h1, h2, h3 {
+  font-family: var(--serifa); font-weight: 400; color: var(--cor-titulo);
+  letter-spacing: -.015em; text-wrap: balance;
+}
+h2 { font-size: 1.75rem; line-height: 1.1; margin-bottom: 18px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* botão quadrado, como no mockup do celular */
+.bt {
+  border-radius: 4px; padding: 12px 24px;
+  background: var(--cor-destaque); color: var(--cor-tinta);
+  font-weight: 700; letter-spacing: .02em;
+}
+
+/* ---------- menu ---------- */
+.menu { min-height: 64px; color: var(--cor-titulo); }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 400; letter-spacing: 0; }
+.logo-selo {
+  display: inline-grid; place-items: center; width: 32px; height: 32px;
+  border: 1px solid var(--cor-destaque); color: var(--cor-destaque);
+  font-family: var(--serifa); font-size: 1.125rem;
+}
+.logo-nome { font-family: var(--serifa); font-size: 1.375rem; line-height: 1; color: var(--cor-titulo); }
+.logo-ramo {
+  display: block; margin-top: 3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: .6875rem; letter-spacing: .18em; text-transform: uppercase; color: var(--cor-destaque);
+}
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; color: var(--cor-texto); }
+
+/* ---------- capa ---------- */
+.capa { position: relative; overflow: hidden; padding-top: 24px; padding-bottom: 32px; }
+.capa-prumo { position: absolute; top: 0; right: 22px; width: 30px; height: auto; }
+.capa h1 {
+  max-width: 14ch; font-size: 2.5rem; line-height: 1.04; letter-spacing: -.02em;
+  margin-bottom: 18px;
+}
+.capa-texto { max-width: 30ch; font-size: 1.0625rem; color: var(--cor-texto); margin-bottom: 22px; }
+
+.capa-dados { margin: 0 0 22px; display: grid; gap: 2px; }
+.capa-dados div {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
+  padding: 8px 14px; background: #232c3f;
+}
+.capa-dados dt { font-size: .875rem; color: var(--cor-suave); }
+.capa-dados dd { margin: 0; font-family: var(--serifa); font-size: 1.0625rem; color: var(--cor-titulo); text-align: right; }
+
+/* ---------- áreas (papel marfim) ---------- */
+.areas { background: var(--cor-papel); color: var(--cor-tinta); padding-top: 32px; padding-bottom: 20px; }
+.areas h2 { color: var(--cor-tinta); }
+.areas-lista { margin: 0; }
+.areas-lista div { padding: 10px 0 12px; border-top: 1px solid #d4c9b3; }
+.areas-lista dt {
+  font-family: var(--serifa); font-size: 1.375rem; line-height: 1.15; color: var(--cor-ouro-escuro);
+  margin-bottom: 4px;
+}
+.areas-lista dd { margin: 0; font-size: .9375rem; line-height: 1.45; color: var(--cor-tinta); }
+
+/* ---------- como funciona (marinho fundo) ---------- */
+.atendimento { background: var(--cor-fundo-escuro); padding-top: 32px; padding-bottom: 32px; }
+.atendimento h2 { font-size: 1.625rem; }
+
+/* o fio de prumo liga os passos, com o peso no fim */
+.passos {
+  position: relative; list-style: none; margin: 0 0 22px; padding: 0 0 0 26px;
+  counter-reset: passo;
+}
+.passos::before {
+  content: ""; position: absolute; left: 5px; top: 8px; bottom: 14px; width: 1px;
+  background: var(--cor-destaque);
+}
+.passos li {
+  position: relative; padding-bottom: 10px; font-size: .9375rem; line-height: 1.45; color: var(--cor-texto);
+}
+.passos li:last-child { padding-bottom: 0; }
+.passos li::before {
+  content: ""; position: absolute; left: -25px; top: 6px; width: 9px; height: 9px;
+  background: var(--cor-fundo-escuro); border: 1px solid var(--cor-destaque); transform: rotate(45deg);
+}
+.passos li:last-child::before { background: var(--cor-destaque); }
+.passos strong { display: block; font-family: var(--serifa); font-weight: 400; font-size: 1.1875rem; color: var(--cor-titulo); }
+
+.modos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.modo { padding: 14px 14px 16px; background: #222a3b; }
+.modo h3 { font-size: 1.25rem; line-height: 1.1; color: var(--cor-destaque); margin-bottom: 6px; }
+.modo p { margin: 0; font-size: .875rem; line-height: 1.4; color: var(--cor-texto); }
+
+/* ---------- sobre + depoimento (papel) ---------- */
+.sobre { background: var(--cor-papel-2); color: var(--cor-tinta); padding-top: 32px; padding-bottom: 4px; }
+.sobre h2 { color: var(--cor-tinta); }
+.sobre-texto { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 18px; }
+.socios { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.socios li { font-size: .875rem; line-height: 1.4; color: var(--cor-tinta-suave); font-variant-numeric: tabular-nums; }
+.socios strong { display: block; font-family: var(--serifa); font-weight: 400; font-size: 1.125rem; color: var(--cor-tinta); }
+
+.depoimento { background: var(--cor-papel-2); padding-top: 16px; padding-bottom: 28px; }
+.depoimento figure { margin: 0; padding: 16px 18px; background: var(--cor-papel); }
+.aspas { width: 26px; height: 20px; margin-bottom: 8px; }
+.depoimento blockquote { margin: 0 0 12px; }
+.depoimento blockquote p {
+  margin: 0; font-family: var(--serifa); font-style: italic; font-size: 1.1875rem; line-height: 1.3; color: var(--cor-tinta);
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-tinta-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-tinta); }
+
+/* ---------- contato ---------- */
+.onde { padding-top: 32px; padding-bottom: 32px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 7px 0; border-bottom: 1px solid #36405a; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 400; color: var(--cor-suave); }
+.horarios td { text-align: right; font-family: var(--serifa); color: var(--cor-titulo); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+
+.endereco { font-size: 1rem; margin-bottom: 10px; }
+.endereco strong { font-family: var(--serifa); font-weight: 400; font-size: 1.125rem; color: var(--cor-titulo); }
+.fone { font-size: .9375rem; color: var(--cor-texto); margin-bottom: 22px; font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape { background: var(--cor-rodape); color: var(--cor-texto); text-align: left; padding-top: 24px; padding-bottom: 24px; }
+.rodape p { margin-bottom: 4px; font-size: .8125rem; }
+.rodape .rodape-nome { font-family: var(--serifa); font-size: 1.75rem; line-height: 1.1; color: var(--cor-destaque); }
+.rodape .rodape-fino { margin: 0; font-size: .8125rem; color: var(--cor-suave); }

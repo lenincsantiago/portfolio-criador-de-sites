@@ -1,0 +1,135 @@
+/* Cacho & Cor — salão de cabelo cacheado. Cores tiradas de style.css (.ce-salao). */
+:root {
+  --cor-fundo: #fbeff0;     /* rosa-claro do salão */
+  --cor-texto: #4a1d2b;     /* vinho, tinta principal */
+  --cor-marca: #4a1d2b;     /* vinho: faixa do antes e depois */
+  --cor-destaque: #a1385a;  /* rosa-escuro: botão e escolhas */
+  --cor-rosa: #d1789a;      /* "&" do logo e desenhos */
+  --cor-suave: #6e4553;     /* texto secundário */
+  --cor-creme: #fffaf6;     /* fundo dos serviços e depoimento */
+  --cor-pilula: #f0d9dd;    /* chips e casas da agenda */
+  --cor-areia: #f6e3e7;     /* fundo de horário e endereço */
+  --cor-rodape: #34121e;
+  --serifa: Georgia, 'Times New Roman', serif;
+}
+
+::selection { background: var(--cor-rosa); color: var(--cor-texto); }
+
+h1, h2, h3 { color: var(--cor-texto); text-wrap: balance; }
+h2 { font-family: var(--serifa); font-style: italic; font-weight: 400; font-size: 1.875rem; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 12px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------- menu ---------- */
+.menu { background: var(--cor-fundo); color: var(--cor-texto); }
+.logo { font-family: var(--serifa); font-style: italic; font-weight: 400; font-size: 1.5rem; letter-spacing: -.01em; line-height: 1; }
+.logo-e { color: var(--cor-destaque); }
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- capa ---------- */
+.capa { padding-top: 20px; padding-bottom: 30px; }
+.capa h1 {
+  font-family: var(--serifa); font-style: italic; font-weight: 400;
+  font-size: 2.875rem; line-height: 1; letter-spacing: -.03em; margin-bottom: 16px;
+}
+.capa-texto { max-width: 30ch; font-size: 1.0625rem; margin-bottom: 10px; }
+.capa-selo { font-size: .875rem; font-weight: 600; color: var(--cor-destaque); margin-bottom: 18px; }
+.cartela { width: 100%; height: auto; margin-bottom: 8px; }
+.cartela-legenda { font-size: .8125rem; color: var(--cor-suave); margin-bottom: 18px; }
+
+.bt { border-radius: 99px; padding: 12px 24px; background: var(--cor-destaque); color: #fff; }
+
+/* ---------- serviços ---------- */
+.servicos { background: var(--cor-creme); padding-top: 30px; padding-bottom: 30px; }
+.servicos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; }
+.servico-topo { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.servicos-lista h3 { font-family: var(--serifa); font-style: italic; font-weight: 400; font-size: 1.5rem; line-height: 1.1; margin: 0; }
+.servico-topo .preco { margin-left: auto; }
+.servico-nota { font-size: .9375rem; line-height: 1.4; color: var(--cor-suave); margin: 0; }
+.chip {
+  display: inline-block; padding: 3px 12px; border-radius: 99px;
+  background: var(--cor-pilula); color: var(--cor-destaque); font-size: .875rem; font-weight: 700;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.preco { font-size: 1.25rem; font-weight: 800; color: var(--cor-texto); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.preco small { display: block; text-align: right; line-height: 1; font-size: .75rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- antes e depois (faixa vinho) ---------- */
+.antes { background: var(--cor-marca); color: var(--cor-fundo); padding-top: 30px; padding-bottom: 28px; }
+.antes h2 { color: var(--cor-fundo); }
+.antes-texto { font-size: 1rem; max-width: 34ch; margin-bottom: 18px; }
+.antes-par { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.antes-par figure { margin: 0; }
+.antes-par svg { width: 100%; height: auto; }
+.antes-par figcaption { margin-top: 8px; font-family: var(--serifa); font-style: italic; font-size: 1.125rem; color: #f3c6d4; }
+
+/* ---------- agenda ---------- */
+.agenda { padding-top: 30px; padding-bottom: 30px; }
+.agenda-texto { font-size: 1rem; margin-bottom: 14px; }
+.agenda-passo { font-size: .9375rem; font-weight: 700; margin: 0 0 8px; }
+.dias, .horas, .equipe { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 6px; }
+
+.dias { grid-template-columns: repeat(5, 1fr); }
+.dias li {
+  display: grid; place-items: center; padding: 6px 0; border-radius: 14px; background: #fff;
+  font-size: 1.125rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums;
+}
+.dias li span:first-child { font-size: .8125rem; font-weight: 600; color: var(--cor-suave); }
+
+.horas { grid-template-columns: repeat(3, 1fr); }
+.horas li {
+  display: grid; place-items: center; min-height: 40px; border-radius: 99px; background: #fff;
+  font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.horas .ocupado { background: transparent; color: var(--cor-suave); font-weight: 500; text-decoration: line-through; line-height: 1.1; padding: 4px 0; }
+.horas .ocupado span { font-size: .75rem; text-decoration: none; display: block; }
+
+.equipe { grid-template-columns: repeat(3, 1fr); }
+.equipe li {
+  display: grid; justify-items: center; text-align: center; gap: 2px;
+  padding: 8px 4px 10px; border-radius: 16px; background: #fff;
+  font-size: .8125rem; line-height: 1.25; color: var(--cor-suave);
+}
+.equipe strong { font-size: .9375rem; color: var(--cor-texto); }
+.inicial {
+  display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 4px; border-radius: 50%;
+  background: var(--cor-pilula); color: var(--cor-texto);
+  font-family: var(--serifa); font-style: italic; font-size: 1.0625rem;
+}
+
+.dias .ativo, .horas .ativo, .equipe .ativo { background: var(--cor-destaque); color: #fff; }
+.dias .ativo span:first-child, .equipe .ativo strong { color: #fff; }
+.equipe .ativo .inicial { background: #fff; color: var(--cor-destaque); }
+
+.bt-largo { display: flex; width: 100%; }
+
+/* ---------- depoimento ---------- */
+.depoimento { background: var(--cor-creme); padding-top: 30px; padding-bottom: 30px; }
+.depoimento figure { margin: 0; }
+.depoimento blockquote { margin: 0 0 14px; }
+.depoimento blockquote p {
+  font-family: var(--serifa); font-style: italic; font-size: 1.375rem; line-height: 1.3; letter-spacing: -.01em; margin: 0;
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- horário e endereço ---------- */
+.onde { background: var(--cor-areia); padding-top: 30px; padding-bottom: 30px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 8px 0; border-bottom: 1px solid #e3c3cb; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.horarios td { text-align: right; font-weight: 800; }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+.endereco { font-size: 1rem; margin-bottom: 8px; }
+.fone { margin: 0; font-size: .9375rem; font-weight: 700; color: var(--cor-destaque); font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape { background: var(--cor-rodape); color: #f3dfe4; text-align: left; padding-top: 24px; padding-bottom: 24px; }
+.rodape p { margin-bottom: 6px; }
+.rodape-nome { font-family: var(--serifa); font-style: italic; font-size: 2.25rem; line-height: 1; letter-spacing: -.02em; color: #fbeff0; }
+.rodape .logo-e { color: var(--cor-rosa); }
+.rodape-fino { margin: 0; font-size: .8125rem; color: #d9b8c2; }

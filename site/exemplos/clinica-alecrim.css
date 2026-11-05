@@ -1,0 +1,151 @@
+/* Clínica Alecrim — clínica médica de bairro. Cores tiradas de style.css (.ce-clinica). */
+:root {
+  --cor-fundo: #f3f8fa;     /* azul-acinzentado claro */
+  --cor-texto: #10343c;     /* petróleo escuro, tinta principal */
+  --cor-marca: #135f63;     /* verde-água escuro: faixa da equipe */
+  --cor-destaque: #1c8380;  /* verde-água: capa e botões */
+  --cor-suave: #34525a;     /* texto secundário (contraste 8:1 no fundo) */
+  --cor-pilula: #dbe7eb;
+  --cor-folha: #d7eeec;     /* verde-água bem claro: fundo dos desenhos */
+  --cor-preco: #14625f;     /* verde-água para texto em fundo claro */
+  --cor-rodape: #0c2f34;
+}
+
+::selection { background: var(--cor-folha); color: var(--cor-texto); }
+
+h1, h2, h3 { color: var(--cor-texto); letter-spacing: -.02em; text-wrap: balance; }
+h2 { font-size: 1.625rem; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+.bt { background: var(--cor-destaque); color: #fff; border-radius: 99px; padding: 12px 24px; font-weight: 700; }
+
+/* ---------- menu ---------- */
+.menu { background: #fff; color: var(--cor-texto); }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: -.01em; }
+.logo-selo { width: 30px; height: 30px; flex-shrink: 0; }
+.menu-nav { display: flex; gap: 16px; font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- capa + agenda ---------- */
+.capa {
+  position: relative; overflow: hidden;
+  padding-top: 28px; padding-bottom: 28px;
+  background: var(--cor-destaque); color: #fff;
+}
+.capa-ramo { position: absolute; top: -18px; right: -30px; width: 104px; height: auto; transform: rotate(14deg); }
+.capa h1 {
+  position: relative; max-width: 11ch;
+  font-size: 2.25rem; font-weight: 800; line-height: 1.02; letter-spacing: -.035em;
+  color: #fff; margin-bottom: 14px;
+}
+.capa-texto { position: relative; max-width: 31ch; font-size: 1.0625rem; margin-bottom: 20px; }
+
+.agenda {
+  position: relative; padding: 18px 16px 18px; border-radius: 16px;
+  background: #fff; color: var(--cor-texto);
+}
+.agenda-titulo { font-size: 1.25rem; margin-bottom: 12px; }
+.agenda-espec {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  margin-bottom: 14px; padding: 10px 12px; border-radius: 10px; background: var(--cor-fundo);
+  font-size: .9375rem;
+}
+.agenda-espec span { color: var(--cor-suave); }
+.agenda-rotulo { margin-bottom: 8px; font-size: .875rem; font-weight: 700; color: var(--cor-suave); }
+
+.dias, .horas { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 6px; }
+.dias { grid-template-columns: repeat(6, 1fr); }
+.dias li {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 7px 0 8px; border-radius: 10px; background: var(--cor-fundo);
+  font-variant-numeric: tabular-nums;
+}
+.dias span { font-size: .75rem; font-weight: 600; color: var(--cor-suave); }
+.dias b { font-size: 1.125rem; line-height: 1.2; }
+
+.horas { grid-template-columns: repeat(3, 1fr); }
+.horas li {
+  padding: 8px 0; border-radius: 99px; background: var(--cor-fundo); text-align: center;
+  font-size: .9375rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+.horas .ocupado { background: transparent; color: #5a7680; font-weight: 500; text-decoration: line-through; }
+
+.dias .escolhido, .horas .escolhido { background: var(--cor-marca); color: #fff; }
+.dias .escolhido span { color: #d7eeec; }
+
+.agenda .bt { width: 100%; }
+
+/* ---------- especialidades ---------- */
+.espec { padding-top: 32px; padding-bottom: 28px; }
+
+.espec-destaque {
+  display: grid; grid-template-columns: 110px 1fr; gap: 16px; align-items: center;
+  margin-bottom: 20px;
+}
+.desenho-esteto { width: 110px; height: 110px; }
+.espec-destaque h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
+.espec-destaque p { font-size: .9375rem; color: var(--cor-suave); margin-bottom: 8px; }
+.espec-destaque .preco { font-size: 1.375rem; font-weight: 800; color: var(--cor-preco); margin: 0; font-variant-numeric: tabular-nums; }
+.preco span { font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+.espec-lista { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 8px; }
+.espec-lista li {
+  display: grid; grid-template-columns: 52px 1fr auto; gap: 12px; align-items: center;
+  padding: 10px 14px 10px 10px; border-radius: 14px; background: #fff;
+}
+.tile { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 12px; background: var(--cor-folha); }
+.tile svg { width: 32px; height: 32px; }
+.item-texto { font-size: .875rem; line-height: 1.35; color: var(--cor-suave); }
+.item-texto strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+.item-preco { font-weight: 800; color: var(--cor-preco); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.espec-nota { margin: 0; font-size: .875rem; color: var(--cor-suave); }
+
+/* ---------- equipe (faixa escura) ---------- */
+.equipe { padding-top: 34px; padding-bottom: 32px; background: var(--cor-marca); color: #fff; }
+.equipe h2 { color: #fff; }
+.equipe-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 14px; }
+.equipe-lista li { display: flex; flex-direction: column; }
+.equipe-lista .avatar {
+  display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 10px; border-radius: 50%;
+  background: var(--cor-folha); color: var(--cor-marca);
+  font-size: 1.125rem; font-weight: 800; letter-spacing: -.02em;
+}
+.equipe-lista .avatar-b { background: #f4e2bf; color: #5a4316; }
+.equipe-lista .avatar-c { background: #f6d9cf; color: #7a3420; }
+.equipe-lista .avatar-d { background: #dbe7eb; color: var(--cor-texto); }
+.equipe-lista strong { font-size: 1rem; line-height: 1.25; }
+.equipe-lista span { font-size: .9375rem; color: #d7eeec; }
+.equipe-lista small { margin-top: 2px; font-size: .8125rem; color: #b9dcd9; font-variant-numeric: tabular-nums; }
+
+/* ---------- depoimento ---------- */
+.depoimento { padding-top: 34px; padding-bottom: 30px; background: #fff; }
+.depoimento figure { margin: 0; }
+.aspas { width: 36px; height: 27px; margin-bottom: 12px; }
+.depoimento blockquote { margin: 0 0 14px; }
+.depoimento blockquote p {
+  font-size: 1.3125rem; font-weight: 700; line-height: 1.28; letter-spacing: -.015em; color: var(--cor-texto); margin: 0;
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- horário e endereço ---------- */
+.onde { background: #e3eef1; padding-top: 32px; padding-bottom: 32px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 8px 0; border-bottom: 1px solid #c3d6dc; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.horarios td { text-align: right; font-weight: 800; color: var(--cor-texto); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+
+.endereco { font-size: 1rem; margin-bottom: 8px; }
+.entrega { font-size: .875rem; color: var(--cor-suave); margin-bottom: 18px; }
+.fone { margin: 10px 0 0; font-size: .875rem; font-weight: 600; color: var(--cor-suave); font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape { background: var(--cor-rodape); color: #d9e9ec; text-align: left; padding-top: 28px; padding-bottom: 28px; }
+.rodape p { margin-bottom: 6px; }
+.rodape-nome { font-size: 1.75rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: #8fd3c8; }
+.rodape-fino { margin: 0; font-size: .8125rem; color: #b6cfd4; }

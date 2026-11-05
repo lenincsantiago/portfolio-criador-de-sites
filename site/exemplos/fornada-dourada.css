@@ -1,0 +1,161 @@
+/* Fornada Dourada — padaria de bairro. Cores tiradas de style.css (.ce-padaria). */
+:root {
+  --cor-fundo: #fdf6ea;     /* creme da massa */
+  --cor-texto: #3b2a1e;     /* marrom-casca, tinta principal */
+  --cor-marca: #4a3223;     /* marrom escuro: faixa de festas */
+  --cor-destaque: #a4561f;  /* casca assada: preços e pino do mapa */
+  --cor-suave: #5c4434;     /* texto secundário (contraste 8:1 no creme) */
+  --cor-areia: #e8dcc8;     /* fundo dos desenhos */
+  --cor-dourado: #f2bd73;   /* campo da capa */
+  --cor-laranja: #e0913f;   /* selo do logo */
+  --cor-zap: #25d366;
+  --cor-zap-texto: #04150a;
+  --cor-rodape: #2e1f15;
+}
+
+::selection { background: var(--cor-laranja); color: var(--cor-texto); }
+
+h1, h2, h3 { color: var(--cor-texto); letter-spacing: -.02em; text-wrap: balance; }
+h2 { font-size: 1.625rem; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------- menu ---------- */
+.menu { background: var(--cor-fundo); color: var(--cor-texto); }
+.logo { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; letter-spacing: -.01em; }
+.logo-selo {
+  display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--cor-laranja); color: var(--cor-texto); font-size: 1rem; font-weight: 800;
+}
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- capa ---------- */
+.capa {
+  position: relative; overflow: hidden;
+  padding-top: 28px; padding-bottom: 36px;
+  background: var(--cor-dourado);
+}
+.capa h1 { font-size: 2.5rem; font-weight: 800; line-height: 1.02; letter-spacing: -.035em; margin-bottom: 16px; }
+.selo-aberto {
+  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 14px;
+  padding: 5px 12px; border-radius: 99px; background: #fffaf2;
+  font-size: .875rem; font-weight: 700; color: #2f6b2a;
+}
+.ponto { width: 8px; height: 8px; border-radius: 50%; background: #3fa34d; }
+.capa-texto { max-width: 32ch; font-size: 1.0625rem; color: var(--cor-texto); margin-bottom: 22px; }
+
+.fornadas {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 22px;
+}
+.fornadas div { padding: 12px 12px 14px; border-radius: 12px; background: var(--cor-fundo); }
+.fornadas dt {
+  font-size: 2.25rem; font-weight: 800; line-height: 1; letter-spacing: -.04em;
+  color: var(--cor-destaque); font-variant-numeric: tabular-nums;
+}
+.fornadas dd { margin: 6px 0 0; font-size: .875rem; line-height: 1.35; color: var(--cor-texto); }
+
+.bt-zap { background: var(--cor-zap); color: var(--cor-zap-texto); border-radius: 99px; padding: 12px 22px; }
+
+.capa-pao { position: absolute; right: -34px; bottom: -4px; width: 190px; height: auto; transform: rotate(-8deg); }
+
+/* ---------- mais pedidos ---------- */
+.pedidos { padding-top: 36px; }
+
+.pedido-destaque {
+  display: grid; grid-template-columns: 118px 1fr; gap: 16px; align-items: center;
+  margin-bottom: 20px;
+}
+.pedido-destaque h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
+.pedido-destaque p { font-size: .9375rem; color: var(--cor-suave); margin-bottom: 8px; }
+.pedido-destaque .preco { font-size: 1.375rem; font-weight: 800; color: var(--cor-destaque); margin: 0; }
+.preco span { font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* três pães de queijo num prato de areia */
+.desenho-queijo {
+  position: relative; width: 118px; height: 118px; border-radius: 50%; background: var(--cor-areia);
+}
+.desenho-queijo i {
+  position: absolute; width: 46px; height: 42px; border-radius: 50% 50% 46% 46%;
+  background: radial-gradient(circle at 35% 30%, #ffe7a8, #e6a93f 72%);
+}
+.desenho-queijo i:nth-child(1) { left: 18px; top: 46px; }
+.desenho-queijo i:nth-child(2) { left: 54px; top: 50px; }
+.desenho-queijo i:nth-child(3) { left: 36px; top: 20px; }
+
+.pedidos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pedidos-lista li {
+  display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center;
+  padding: 10px 12px 10px 10px; border-radius: 14px; background: #f6ead6;
+}
+.tile {
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 12px; background: var(--cor-fundo);
+}
+.item-texto { font-size: .875rem; line-height: 1.35; color: var(--cor-suave); }
+.item-texto strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+.item-preco { font-weight: 800; color: #8a4516; text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.item-preco small { display: block; font-size: .75rem; font-weight: 600; color: var(--cor-suave); }
+
+.desenho-bolo {
+  width: 36px; height: 30px; border-radius: 6px 6px 3px 3px;
+  background: linear-gradient(#fff 0 22%, #8a4b2a 22% 46%, #f4d9a8 46% 62%, #8a4b2a 62%);
+}
+.desenho-coxinha {
+  width: 28px; height: 32px; border-radius: 50% 50% 46% 46% / 64% 64% 36% 36%;
+  background: radial-gradient(circle at 40% 70%, #f0b25b, #c97a2c 75%);
+}
+.desenho-frances {
+  width: 42px; height: 24px; border-radius: 50%; transform: rotate(-14deg);
+  background:
+    linear-gradient(-62deg, transparent 0 46%, #f3cf92 46% 56%, transparent 56%),
+    radial-gradient(ellipse at 40% 30%, #d9893a, #9c5520 78%);
+}
+
+/* ---------- festas (faixa escura) ---------- */
+.festas {
+  position: relative; padding-top: 36px; padding-bottom: 32px;
+  background: var(--cor-marca); color: var(--cor-fundo);
+}
+.festas h2 { color: var(--cor-fundo); max-width: 11ch; }
+.festas-bolo { position: absolute; top: 28px; right: 16px; width: 88px; height: 88px; }
+.festas-texto { max-width: 30ch; font-size: 1rem; margin-bottom: 20px; }
+.festas-precos { margin: 0; display: grid; gap: 4px; }
+.festas-precos div {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+  padding: 12px 14px; border-radius: 10px; background: #5a3e2c;
+}
+.festas-precos dt { font-size: .9375rem; }
+.festas-precos dd { margin: 0; font-size: 1.25rem; font-weight: 800; color: var(--cor-dourado); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ---------- depoimento ---------- */
+.depoimento { padding-top: 34px; padding-bottom: 30px; }
+.depoimento figure { margin: 0; }
+.aspas { width: 36px; height: 27px; margin-bottom: 12px; }
+.depoimento blockquote { margin: 0 0 14px; }
+.depoimento blockquote p {
+  font-size: 1.3125rem; font-weight: 700; line-height: 1.28; letter-spacing: -.015em; color: var(--cor-texto); margin: 0;
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- horário e endereço ---------- */
+.onde { background: #f6ead6; padding-top: 36px; padding-bottom: 36px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 7px 0; border-bottom: 1px solid #ddcbb0; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.horarios td { text-align: right; font-weight: 800; color: var(--cor-texto); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+
+.mapa { width: 100%; height: auto; margin-bottom: 14px; }
+.endereco { font-size: 1rem; margin-bottom: 8px; }
+.entrega { font-size: .875rem; color: var(--cor-suave); margin-bottom: 18px; }
+.fone { margin: 10px 0 0; font-size: .875rem; font-weight: 600; color: var(--cor-suave); font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape { background: var(--cor-rodape); color: #f0e2cc; text-align: left; padding-top: 28px; padding-bottom: 28px; }
+.rodape p { margin-bottom: 6px; }
+.rodape-nome { font-size: 1.75rem; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--cor-dourado); }
+.rodape-fino { margin: 0; font-size: .8125rem; color: #cdb99d; }

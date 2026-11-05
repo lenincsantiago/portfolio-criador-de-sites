@@ -1,0 +1,183 @@
+/* Barbearia Dom Bigode — barbearia de bairro. Cores tiradas de style.css (.ce-barbearia). */
+:root {
+  --cor-fundo: #171412;     /* quase preto: capa e fundo geral */
+  --cor-texto: #e9dfd0;     /* creme claro: texto no escuro */
+  --cor-marca: #2c2622;     /* marrom-carvão: faixa dos barbeiros */
+  --cor-destaque: #e3a13b;  /* âmbar: botão, preços, selo */
+  --cor-creme: #f5ecdf;     /* fundo da tabela de preços */
+  --cor-suave: #b3a593;     /* texto secundário no escuro */
+  --cor-tinta: #171412;     /* texto no creme e no âmbar */
+  --cor-tinta-suave: #5a4d40; /* texto secundário no creme */
+  --cor-preco-claro: #8a5208; /* âmbar escurecido para preços no creme */
+  --cor-vermelho: #b8352b;
+  --cor-azul: #2b4a7a;
+  --fonte-titulo: 'Arial Narrow', 'Roboto Condensed', 'Helvetica Neue', Arial, sans-serif;
+}
+
+::selection { background: var(--cor-destaque); color: var(--cor-tinta); }
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo); font-stretch: condensed;
+  text-transform: uppercase; letter-spacing: -.01em; text-wrap: balance;
+}
+h2 { font-size: 1.75rem; font-weight: 800; line-height: 1; margin-bottom: 18px; }
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* ---------- menu ---------- */
+.menu { background: var(--cor-fundo); color: var(--cor-texto); border-bottom: 4px solid var(--cor-destaque); }
+.logo {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--fonte-titulo); font-stretch: condensed;
+  font-size: 1.125rem; font-weight: 800; text-transform: uppercase; letter-spacing: .02em;
+}
+.logo-selo {
+  display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 4px;
+  background: var(--cor-destaque); color: var(--cor-tinta); font-size: .875rem; font-weight: 800; letter-spacing: 0;
+}
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; font-weight: 600; color: var(--cor-suave); }
+
+/* ---------- capa ---------- */
+.capa { padding-top: 30px; padding-bottom: 32px; background: var(--cor-fundo); color: var(--cor-texto); }
+.capa h1 {
+  font-size: 2.375rem; font-weight: 800; line-height: .95; letter-spacing: -.02em;
+  color: var(--cor-creme); margin-bottom: 18px;
+}
+.capa-corpo { display: grid; grid-template-columns: 1fr 56px; gap: 20px; align-items: center; margin-bottom: 20px; }
+.capa-texto { margin: 0; font-size: 1.0625rem; line-height: 1.5; color: var(--cor-texto); }
+
+/* poste de barbearia: tampa, tubo listrado e base */
+.desenho-poste { display: flex; flex-direction: column; align-items: center; }
+.poste-tampa, .poste-base { display: block; width: 52px; height: 14px; background: var(--cor-destaque); }
+.poste-tampa { border-radius: 26px 26px 4px 4px; height: 18px; }
+.poste-base { border-radius: 4px 4px 10px 10px; }
+.poste-tubo {
+  position: relative; display: block; width: 38px; height: 118px; overflow: hidden;
+  background: repeating-linear-gradient(-55deg,
+    var(--cor-vermelho) 0 9px, var(--cor-creme) 9px 18px,
+    var(--cor-azul) 18px 27px, var(--cor-creme) 27px 36px);
+}
+.poste-tubo::after { /* reflexo do vidro */
+  content: ""; position: absolute; top: 0; bottom: 0; left: 7px; width: 5px;
+  background: #fff; opacity: .35; border-radius: 3px;
+}
+
+.faixa {
+  position: relative; height: 64px; margin: 0 0 22px; border-radius: 6px;
+  background: repeating-linear-gradient(-45deg,
+    var(--cor-vermelho) 0 10px, var(--cor-creme) 10px 20px,
+    var(--cor-azul) 20px 30px, var(--cor-creme) 30px 40px);
+}
+.faixa span {
+  position: absolute; left: 10px; bottom: 10px;
+  padding: 5px 12px; border-radius: 4px;
+  background: var(--cor-fundo); color: var(--cor-creme);
+  font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+
+.bt-agendar, .bt-escuro {
+  border-radius: 4px; padding: 13px 24px; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .06em; font-size: .9375rem;
+}
+.bt-agendar { background: var(--cor-destaque); color: var(--cor-tinta); }
+.bt-escuro { background: var(--cor-tinta); color: var(--cor-creme); }
+
+/* ---------- tabela de preços (creme, pontilhado) ---------- */
+.precos { padding-top: 30px; padding-bottom: 28px; background: var(--cor-creme); color: var(--cor-tinta); }
+.precos h2 { color: var(--cor-tinta); }
+.precos-lista { list-style: none; margin: 0 0 14px; padding: 0; }
+.precos-lista li {
+  display: flex; align-items: baseline; gap: 8px; padding: 10px 0;
+}
+.servico { font-size: 1.125rem; font-weight: 700; line-height: 1.25; }
+.servico small { display: block; margin-top: 2px; font-size: .875rem; font-weight: 400; color: var(--cor-tinta-suave); }
+.precos-lista i { flex: 1; min-width: 16px; border-bottom: 2px dotted #9a8b78; transform: translateY(-5px); }
+.precos-lista b {
+  font-family: var(--fonte-titulo); font-stretch: condensed;
+  font-size: 1.5rem; font-weight: 800; color: var(--cor-preco-claro);
+  white-space: nowrap; font-variant-numeric: tabular-nums;
+}
+.precos-lista .combo {
+  margin: 4px -12px; padding: 14px 12px; border-radius: 6px;
+  background: var(--cor-fundo); color: var(--cor-texto);
+}
+.combo .servico small { color: var(--cor-suave); }
+.combo i { border-bottom-color: #6b5e51; }
+.combo b { color: var(--cor-destaque); font-size: 1.75rem; }
+.combo em {
+  display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 3px; vertical-align: 2px;
+  background: var(--cor-destaque); color: var(--cor-tinta);
+  font-style: normal; font-size: .75rem; font-weight: 800;
+}
+.precos-nota { margin: 0; font-size: .9375rem; color: var(--cor-tinta-suave); }
+
+/* ---------- barbeiros (faixa carvão) ---------- */
+.barbeiros { padding-top: 30px; padding-bottom: 28px; background: var(--cor-marca); color: var(--cor-texto); }
+.barbeiros h2 { color: var(--cor-creme); max-width: 12ch; }
+.barbeiros-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.barbeiros-lista li { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; }
+.barbeiros-lista li:first-child { grid-template-columns: 72px 1fr; padding-bottom: 6px; }
+.avatar {
+  display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%;
+  font-family: var(--fonte-titulo); font-stretch: condensed; font-size: 1.25rem; font-weight: 800;
+}
+.barbeiros-lista li:first-child .avatar { width: 72px; height: 72px; font-size: 1.625rem; }
+.avatar-ambar { background: var(--cor-destaque); color: var(--cor-tinta); }
+.avatar-creme { background: var(--cor-creme); color: var(--cor-vermelho); }
+.avatar-azul { background: var(--cor-azul); color: var(--cor-creme); }
+.barbeiro-texto { font-size: .9375rem; line-height: 1.4; color: var(--cor-suave); }
+.barbeiro-texto strong { display: block; font-size: 1.0625rem; color: var(--cor-creme); }
+
+/* ---------- galeria em desenho ---------- */
+.galeria { padding-top: 30px; padding-bottom: 28px; background: var(--cor-fundo); color: var(--cor-texto); }
+.galeria h2 { color: var(--cor-creme); }
+.galeria-grade { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.galeria figure { margin: 0; padding: 10px 12px; border-radius: 6px; background: var(--cor-marca); }
+.galeria svg { width: 100%; height: auto; }
+.galeria-grande { grid-column: 1 / -1; background: #3a2f27; }
+.galeria-grande svg { max-height: 120px; }
+.galeria figcaption { margin-top: 8px; font-size: .875rem; line-height: 1.3; color: var(--cor-texto); }
+
+/* ---------- depoimento ---------- */
+.depoimento { padding-top: 6px; padding-bottom: 34px; background: var(--cor-fundo); }
+.depoimento figure { margin: 0; padding-left: 16px; border-left: 4px solid var(--cor-destaque); }
+.depoimento blockquote { margin: 0 0 12px; }
+.depoimento blockquote p {
+  margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.3; letter-spacing: -.01em; color: var(--cor-creme);
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- agendar (campo âmbar) ---------- */
+.agendar { padding-top: 34px; padding-bottom: 34px; background: var(--cor-destaque); color: var(--cor-tinta); }
+.agendar h2 { color: var(--cor-tinta); }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 8px 0; border-bottom: 2px solid #b97d22; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; }
+.horarios td { text-align: right; font-weight: 800; }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+.endereco { font-size: 1rem; margin-bottom: 8px; }
+.agendar-texto { font-size: .9375rem; margin-bottom: 18px; }
+.fone { margin: 10px 0 0; font-size: .9375rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape {
+  position: relative; text-align: left; padding-top: 34px; padding-bottom: 26px;
+  background: #0f0d0b; color: var(--cor-texto);
+}
+.rodape::before { /* listra do poste no topo */
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 8px;
+  background: repeating-linear-gradient(-45deg,
+    var(--cor-vermelho) 0 8px, var(--cor-creme) 8px 16px,
+    var(--cor-azul) 16px 24px, var(--cor-creme) 24px 32px);
+}
+.rodape p { margin-bottom: 6px; }
+.rodape-nome {
+  font-family: var(--fonte-titulo); font-stretch: condensed; text-transform: uppercase;
+  font-size: 2.25rem; font-weight: 800; line-height: 1; color: var(--cor-destaque);
+}
+.rodape-fino { margin: 0; font-size: .8125rem; color: var(--cor-suave); }

@@ -1,0 +1,861 @@
+{
+    "nome": "Seu Nome Completo",
+    "marca": "Sua Marca",
+    "cargo": "Desenvolvedor Web",
+    "cidade": "Atendimento em todo o Brasil",
+    "whatsapp": "5500000000000",
+    "msg_wa": "Olá! Vi seu portfólio e gostaria de um orçamento.",
+    "email": "contato@seudominio.com.br",
+    "linkedin": "https://www.linkedin.com/in/seu-perfil",
+    "frases": [
+        "Leve e rápido no celular.",
+        "Do jeito que você atende.",
+        "Eu cuido da parte técnica."
+    ],
+    "sobre": "Sou Seu Nome, desenvolvedor web em Sua Cidade. Crio sites para empresas e profissionais de todo o Brasil e uso inteligência artificial para entregar o seu site mais rápido.",
+    "seo": {
+        "descricao": "Criação de sites para empresas e profissionais em todo o Brasil, com base em Sua Cidade (UF). Sites leves no celular, com WhatsApp e orçamento sem compromisso.",
+        "cidade": "Sua Cidade",
+        "uf": "UF"
+    },
+    "secoes": {
+        "sobre": "Sobre",
+        "servicos": "Serviços",
+        "projetos": "Projetos de demonstração",
+        "contato_rotulo": "Contato",
+        "contato_titulo": "Peça seu orçamento em 2 minutos",
+        "contato_texto": "Conte o básico do seu negócio. Eu respondo com uma proposta e o prazo previsto.",
+        "projetos_rotulo": "Projetos de demonstração"
+    },
+    "botoes": {
+        "orcamento": "Pedir orçamento",
+        "ver_projetos": "Ver exemplos",
+        "whatsapp": "WhatsApp",
+        "email": "E-mail",
+        "enviar": "Enviar mensagem",
+        "ver_site": "Ver site",
+        "saiba_mais": "Saiba mais"
+    },
+    "segmentos": [
+        {
+            "id": "g1",
+            "titulo": "Restaurantes e lanchonetes",
+            "texto": "Cardápio, horários, endereço e pedidos pelo WhatsApp, com fotos dos pratos."
+        },
+        {
+            "id": "g2",
+            "titulo": "Clínicas e consultórios",
+            "texto": "Especialidades, equipe, convênios e pedido de consulta pelo WhatsApp."
+        },
+        {
+            "id": "g3",
+            "titulo": "Salões e barbearias",
+            "texto": "Serviços, preços, galeria de trabalhos e horário marcado pelo WhatsApp."
+        },
+        {
+            "id": "g4",
+            "titulo": "Oficinas e autopeças",
+            "texto": "Serviços atendidos e pedido de orçamento pelo WhatsApp."
+        },
+        {
+            "id": "g5",
+            "titulo": "Advocacias",
+            "texto": "Áreas de atuação, equipe e pedido de consulta inicial."
+        },
+        {
+            "id": "g6",
+            "titulo": "Engenheiros e arquitetos",
+            "texto": "Portfólio de obras, serviços como projeto e laudo, e pedido de orçamento."
+        },
+        {
+            "id": "g7",
+            "titulo": "Designers e fotógrafos",
+            "texto": "Galeria de trabalhos, pacotes e formulário para o cliente contar a ideia do projeto."
+        },
+        {
+            "id": "g8",
+            "titulo": "Academias e personal trainers",
+            "texto": "Modalidades, horários, planos e aula experimental marcada pelo WhatsApp."
+        },
+        {
+            "id": "g9",
+            "titulo": "Pet shops e veterinários",
+            "texto": "Banho, tosa, consultas e horário marcado pelo WhatsApp."
+        },
+        {
+            "id": "g10",
+            "titulo": "Contadores e consultores",
+            "texto": "Serviços, dúvidas frequentes e um canal direto para o cliente pedir ajuda."
+        },
+        {
+            "id": "g11",
+            "titulo": "Lojas e comércio local",
+            "texto": "Produtos, endereço, horário de funcionamento e pedido pelo WhatsApp."
+        },
+        {
+            "id": "g12",
+            "titulo": "Esteticistas e clínicas de beleza",
+            "texto": "Tratamentos, profissionais e pedido de horário pelo WhatsApp."
+        }
+    ],
+    "servicos": [
+        {
+            "id": "s1",
+            "slug": "sites-e-landing-pages",
+            "numero": "01",
+            "titulo": "Sites e landing pages",
+            "texto": "O site principal do seu negócio, feito para o cliente entender o que você oferece e chamar no WhatsApp.",
+            "para_quem": "Negócios que querem ser encontrados no Google e receber pedidos, agendamentos ou orçamentos pelo site.",
+            "incluso": "Estrutura pensada para o contato (início, serviços, diferenciais e contato)\nTextos claros, focados no que o cliente quer resolver\nBotões de WhatsApp e e-mail em destaque\nFormulário de contato para pedidos de orçamento\nVersão feita primeiro para o celular",
+            "resultado": "O cliente vê o que você faz logo na primeira tela e chama com um toque.",
+            "seo": "Criação de sites e landing pages para empresas e profissionais: o que você faz, onde atende e o botão do WhatsApp. Orçamento sem compromisso."
+        },
+        {
+            "id": "s2",
+            "slug": "formulario-de-orcamento",
+            "numero": "02",
+            "titulo": "Formulário de orçamento",
+            "texto": "Um formulário que organiza o primeiro contato e envia os pedidos direto para o seu e-mail.",
+            "para_quem": "Clínicas, oficinas, salões e prestadores de serviço que recebem muitos pedidos de orçamento.",
+            "incluso": "Formulário de orçamento com nome, contato e mensagem\nMensagens enviadas direto para o seu e-mail\nBotão de WhatsApp com mensagem pronta para o cliente\nProteção contra spam no formulário",
+            "resultado": "Pedidos chegam organizados, e você gasta menos tempo respondendo às mesmas perguntas.",
+            "seo": "Formulário de orçamento no seu site: os pedidos chegam organizados no seu e-mail, com proteção contra spam e botão de WhatsApp com mensagem pronta."
+        },
+        {
+            "id": "s3",
+            "slug": "design-responsivo",
+            "numero": "03",
+            "titulo": "Design para celular",
+            "texto": "Layout pensado primeiro para o celular, que é onde muita gente procura um serviço perto de casa.",
+            "para_quem": "Qualquer negócio que quer atender bem os clientes no celular, no dia a dia.",
+            "incluso": "Telas organizadas para o polegar\nTextos legíveis sem precisar dar zoom\nCarregamento leve, mesmo com internet móvel\nConferência em celulares e tablets antes da publicação",
+            "resultado": "Quem chega pelo Google ou por um link no WhatsApp navega sem travar.",
+            "seo": "Site pensado primeiro para o celular: leitura sem zoom, botões ao alcance do polegar e carregamento leve até na internet móvel."
+        },
+        {
+            "id": "s4",
+            "slug": "hospedagem-e-dominio",
+            "numero": "04",
+            "titulo": "Domínio e hospedagem",
+            "texto": "Eu registro o domínio, configuro a hospedagem e coloco o site no ar. Você não precisa entender a parte técnica.",
+            "para_quem": "Quem ainda não tem domínio ou não sabe como configurar a publicação.",
+            "incluso": "Compra e configuração do domínio (ex.: seunegocio.com.br), com renovação anual incluída na manutenção\nHospedagem com servidores no Brasil\nCertificado SSL (conexão segura, com cadeado)\nPublicação e conferência final",
+            "resultado": "Um endereço próprio e confiável para divulgar no cartão, no Instagram e no Google.",
+            "seo": "Registro de domínio, hospedagem com servidores no Brasil e certificado SSL. Eu coloco o site no ar e você não precisa entender a parte técnica."
+        },
+        {
+            "id": "s5",
+            "slug": "manutencao-continua",
+            "numero": "05",
+            "titulo": "Manutenção contínua",
+            "texto": "Eu atualizo textos, fotos, preços e horários quando você pedir, dentro do limite do plano.",
+            "para_quem": "Negócios que mudam preços, horários, equipe ou promoções com frequência.",
+            "incluso": "Backup semanal do site, com as cópias das últimas 4 semanas\nAtualização de textos, fotos, preços, horários e contatos (até 2 horas por mês ou 3 pedidos simples; o que não usar não acumula)\nSuporte técnico de segunda a sexta, das 8h às 18h, com resposta em até 48 horas úteis\nHospedagem com servidores no Brasil e renovação anual do domínio",
+            "resultado": "Preço, horário e telefone em dia, para o cliente não desistir por informação velha.",
+            "seo": "Manutenção de site com backup semanal, suporte de segunda a sexta e atualização de textos, fotos, preços e horários dentro do limite do plano."
+        }
+    ],
+    "processo": [
+        {
+            "id": "e1",
+            "titulo": "Você conta o que faz",
+            "texto": "Uma conversa rápida no WhatsApp sobre o que você oferece, quem são os seus clientes e o que espera do site."
+        },
+        {
+            "id": "e2",
+            "titulo": "Você recebe a proposta",
+            "texto": "Envio o que está incluído, o prazo e as condições de pagamento, para você decidir com calma. Você escolhe entre dois modelos: criação mais mensalidade, ou assinatura sem taxa de criação."
+        },
+        {
+            "id": "e3",
+            "titulo": "Montamos juntos",
+            "texto": "Crio a primeira versão e você revisa: até 3 rodadas de revisão de design e estrutura no modelo com taxa de criação, e até 2 na assinatura."
+        },
+        {
+            "id": "e4",
+            "titulo": "O site vai ao ar",
+            "texto": "Configuro domínio e hospedagem, confiro o funcionamento no celular e publico. Você assina o termo de aceite e começa a mensalidade, com fidelidade de 12 meses."
+        }
+    ],
+    "depoimentos": [],
+    "faq": [
+        {
+            "id": "f1",
+            "pergunta": "Quanto custa um site?",
+            "resposta": "Existem dois modelos. No de desenvolvimento, há um pagamento inicial pela criação e uma mensalidade. No de assinatura, não há taxa de criação e você paga só a mensalidade. O valor depende do tamanho do site e das funções, e eu envio o orçamento detalhado para você comparar."
+        },
+        {
+            "id": "f2",
+            "pergunta": "Quanto tempo leva para ficar pronto?",
+            "resposta": "O prazo é contado em dias úteis, a partir do recebimento de todos os textos, fotos e materiais. Ele é informado no orçamento e fica escrito no contrato."
+        },
+        {
+            "id": "f3",
+            "pergunta": "Preciso ter domínio ou hospedagem?",
+            "resposta": "Não precisa. Posso cuidar do domínio, da configuração e da hospedagem, explicando cada etapa. Na manutenção mensal, a hospedagem e a renovação anual do domínio ficam incluídas enquanto o contrato estiver vigente."
+        },
+        {
+            "id": "f4",
+            "pergunta": "Preciso já ter textos e fotos?",
+            "resposta": "Não é obrigatório. Se não tiver, eu te ajudo a escrever os textos e explico como tirar boas fotos com o celular."
+        },
+        {
+            "id": "f5",
+            "pergunta": "Consigo alterar o site depois de pronto?",
+            "resposta": "Sim. As atualizações de textos, fotos, preços e horários são feitas pela manutenção mensal, com até 2 horas ou 3 pedidos simples por mês. O que não for usado no mês não acumula. Novas páginas ou funções são orçadas à parte."
+        },
+        {
+            "id": "f11",
+            "pergunta": "O que está incluído na manutenção mensal?",
+            "resposta": "Todo mês eu faço as atualizações combinadas, e você não mexe em nada técnico. A manutenção inclui backup semanal (com as cópias das últimas 4 semanas), atualização de fotos e vídeos, alteração de preços e catálogos, e mudanças de textos, horários e promoções: até 2 horas de atualizações ou 3 pedidos simples por mês, com fidelidade mínima de 12 meses. Novas páginas, novas funções ou mudança completa de design são orçadas à parte."
+        },
+        {
+            "id": "f6",
+            "pergunta": "O site funciona bem no celular?",
+            "resposta": "Sim. Todo site é criado primeiro para o celular e depois adaptado para tablet e computador."
+        },
+        {
+            "id": "f7",
+            "pergunta": "Como funciona o contrato?",
+            "resposta": "Há dois modelos. No de criação mais mensalidade, você paga a criação do site e uma mensalidade. Na assinatura, não há taxa de criação: você paga só a mensalidade e usa o site por licença. Nos dois, a mensalidade tem fidelidade mínima de 12 meses e o domínio fica no seu nome. Depois da fidelidade, o valor só pode ser reajustado uma vez por ano, limitado ao IPCA, com 30 dias de aviso."
+        },
+        {
+            "id": "f12",
+            "pergunta": "E se eu quiser cancelar?",
+            "resposta": "Depois dos 12 meses, você cancela com 30 dias de aviso, sem multa, desde que as faturas estejam em dia. Antes disso, a multa é de 20% das mensalidades que faltariam. Se você desistir durante a criação do site, a entrada já paga não é devolvida, porque cobre o trabalho feito e a reserva de agenda. Ao sair, entrego o código de transferência do domínio, desde que não haja pagamentos em aberto."
+        },
+        {
+            "id": "f13",
+            "pergunta": "O site e o código são meus?",
+            "resposta": "Depende do modelo. Na criação mais mensalidade, o código e o design passam a ser seus depois do pagamento total da criação. Na assinatura, o site é licenciado enquanto as mensalidades estiverem em dia; depois dos 12 meses, os arquivos passam para você mediante a Taxa de Liberação, um valor único combinado em contrato. O domínio é sempre seu."
+        }
+    ],
+    "projetos": [
+        {
+            "id": "exemplo-1",
+            "nome": "Projeto exemplo 1",
+            "tipo": "Tipo de negócio",
+            "descricao": "Descreva aqui o projeto: o que o cliente precisava e o que o site entrega.",
+            "url": "https://exemplo.com.br/",
+            "imagem": "assets/img/projetos/projeto-exemplo-1.webp"
+        },
+        {
+            "id": "exemplo-2",
+            "nome": "Projeto exemplo 2",
+            "tipo": "Tipo de negócio",
+            "descricao": "Descreva aqui o projeto: o que o cliente precisava e o que o site entrega.",
+            "url": "https://exemplo.com.br/",
+            "imagem": "assets/img/projetos/projeto-exemplo-2.webp"
+        },
+        {
+            "id": "exemplo-3",
+            "nome": "Projeto exemplo 3",
+            "tipo": "Tipo de negócio",
+            "descricao": "Descreva aqui o projeto: o que o cliente precisava e o que o site entrega.",
+            "url": "https://exemplo.com.br/",
+            "imagem": "assets/img/projetos/projeto-exemplo-3.webp"
+        },
+        {
+            "id": "exemplo-4",
+            "nome": "Projeto exemplo 4",
+            "tipo": "Tipo de negócio",
+            "descricao": "Descreva aqui o projeto: o que o cliente precisava e o que o site entrega.",
+            "url": "https://exemplo.com.br/",
+            "imagem": "assets/img/projetos/projeto-exemplo-4.webp"
+        }
+    ],
+    "assistente": [
+        {
+            "id": "preco",
+            "nome": "Quanto custa um site",
+            "rotulo": "Quanto custa?",
+            "palavras": "quanto custa, quanto cobra, qual o preco, qual o valor, preco, valor, orcamento, custo do site, tabela de precos, quanto fica, quanto sai, investimento",
+            "resposta": "O valor depende do tamanho do site (quantas páginas), das funções (formulário, agendamento, integrações) e de quanto texto e imagem eu preciso criar. Me conte sobre o seu negócio pelo WhatsApp e eu envio um orçamento detalhado para você decidir.",
+            "link": ""
+        },
+        {
+            "id": "pagamento",
+            "nome": "Formas de pagamento",
+            "rotulo": "Formas de pagamento",
+            "palavras": "forma de pagamento, formas de pagamento, como pago, como pagar, pix, cartao, parcelar, parcelamento, boleto, entrada, sinal, pagamento, parcelado, aceitam parcelado, parcelas, a vista, avista, transferencia, cartao de credito, pagar no cartao, pagar em dinheiro",
+            "resposta": "As condições de pagamento são combinadas no orçamento, junto com o prazo. Pergunte pelo WhatsApp e eu explico as opções antes de você fechar.",
+            "link": ""
+        },
+        {
+            "id": "desconto",
+            "nome": "Descontos e negociação",
+            "rotulo": "",
+            "palavras": "desconto, promocao, mais barato, negociar, negociacao, cupom, baratear, abaixar o preco",
+            "resposta": "Não tenho uma tabela de descontos fixa. O valor é ajustado conforme o escopo do projeto. Me conte o que você precisa e vemos juntos o que cabe no seu orçamento.",
+            "link": ""
+        },
+        {
+            "id": "mensalidade",
+            "nome": "Custos mensais e anuais",
+            "rotulo": "",
+            "palavras": "mensalidade, custo mensal, por mes, plano mensal, anual, todo mes, assinatura, custo fixo, custos recorrentes, quanto por ano, valor mensal",
+            "resposta": "A manutenção mensal inclui hospedagem e a renovação anual do domínio, enquanto o contrato estiver vigente. O valor é combinado no orçamento, antes de você decidir.",
+            "link": ""
+        },
+        {
+            "id": "manutencao_valor",
+            "nome": "Valor da manutenção",
+            "rotulo": "",
+            "palavras": "quanto custa manter, manutencao, plano de manutencao, manter o site, suporte mensal, atualizacoes mensais, quanto custa a manutencao, quanto e a manutencao, valor da manutencao, valor da manutencao mensal, quanto custa a manutencao por mes, quanto e a manutencao por mes, manutencao por mes",
+            "resposta": "A manutenção mensal é um serviço separado, com fidelidade mínima de 12 meses. Inclui hospedagem, renovação do domínio, suporte e até 2 horas de atualizações ou 3 pedidos simples por mês. O valor é combinado no orçamento.",
+            "link": ""
+        },
+        {
+            "id": "nota_fiscal",
+            "nome": "Nota fiscal e recibo",
+            "rotulo": "",
+            "palavras": "nota fiscal, nota, nf, recibo, mei, cnpj, pessoa juridica, emitir nota, comprovante",
+            "resposta": "Antes de fechar o orçamento, me diga se você precisa de nota fiscal ou recibo, para combinarmos os dados corretos.",
+            "link": ""
+        },
+        {
+            "id": "prazo",
+            "nome": "Prazo de entrega",
+            "rotulo": "Quanto tempo leva?",
+            "palavras": "quanto tempo, prazo, demora, quanto demora, quando fica pronto, em quantos dias, leva quanto tempo, quantos dias, ficar pronto",
+            "resposta": "O prazo depende do escopo e de quando eu recebo os textos e as fotos. Informo a data no orçamento, antes de começar. Se precisar de algo com urgência, conte isso na conversa inicial.",
+            "link": ""
+        },
+        {
+            "id": "urgente",
+            "nome": "Pedido urgente",
+            "rotulo": "",
+            "palavras": "urgente, para ontem, preciso rapido, com pressa, pra amanha, essa semana, o mais rapido possivel, emergencia, semana que vem, pra semana que vem, para semana que vem, pra semana, para semana, preciso logo, urgencia, o quanto antes, em uma semana, uma semana, 1 semana, em duas semanas, em poucos dias",
+            "resposta": "Consigo avaliar um prazo mais curto caso a caso, mas depende da minha agenda naquele momento. Chame no WhatsApp para ver a disponibilidade.",
+            "link": ""
+        },
+        {
+            "id": "disponibilidade",
+            "nome": "Disponibilidade e início",
+            "rotulo": "",
+            "palavras": "disponibilidade, agenda, quando pode comecar, quando comeca, fila, lista de espera, esta disponivel, tem horario livre, quando posso comecar, posso comecar, comecar, quando comecam, quando iniciam, data de inicio, quando posso iniciar",
+            "resposta": "A disponibilidade muda conforme os projetos em andamento. Me chame no WhatsApp para saber quando posso começar o seu.",
+            "link": ""
+        },
+        {
+            "id": "processo",
+            "nome": "Como funciona o processo",
+            "rotulo": "",
+            "palavras": "previa, ver antes de pagar, ver antes, ver como ficaria, mostrar antes, como funciona, processo, passo a passo, etapas, como e o processo, como vai ser, como trabalha, como voce trabalha",
+            "resposta": "O processo tem quatro etapas: você conta sobre o seu negócio, recebe a proposta, eu crio e você aprova a prévia, e por fim o site vai para o ar. Você vê a prévia e pede ajustes antes da publicação. O pagamento inicial é combinado em contrato antes de começar e não é devolvido se você desistir no meio, porque cobre o trabalho já feito. Veja a seção Como funciona nesta página.",
+            "link": "#processo"
+        },
+        {
+            "id": "revisoes",
+            "nome": "Quantidade de ajustes",
+            "rotulo": "",
+            "palavras": "quantas alteracoes, quantas revisoes, revisoes, ajustes, mudancas, pode mudar, alterar depois, quantas vezes, correcoes",
+            "resposta": "No modelo de desenvolvimento, estão incluídas até 3 rodadas de revisão de design e estrutura. No modelo de assinatura, são 2. Mudanças além disso ou fora do escopo são orçadas à parte.",
+            "link": ""
+        },
+        {
+            "id": "briefing",
+            "nome": "O que preciso enviar",
+            "rotulo": "",
+            "palavras": "briefing, questionario, o que preciso enviar, o que preciso ter, preciso preparar, preciso de algo pronto, documentos, o que eu preciso mandar, preciso mandar, o que mandar, o que enviar, o que vou precisar, informacoes para o site, dados do meu negocio",
+            "resposta": "Na conversa inicial eu faço algumas perguntas sobre o seu negócio, o público e os serviços. Você não precisa ter nada pronto para começar.",
+            "link": ""
+        },
+        {
+            "id": "textos_fotos",
+            "nome": "Textos e fotos",
+            "rotulo": "",
+            "palavras": "textos, fotos, imagens, preciso mandar texto, nao tenho fotos, banco de imagens, conteudo, nao tenho texto, escrever o texto",
+            "resposta": "Não é obrigatório ter tudo pronto. Se não tiver textos, eu ajudo a escrever. Para as fotos, dá para usar as suas, tiradas com o celular, com boa luz e fundo limpo. Se for preciso, combinamos imagens de banco.",
+            "link": ""
+        },
+        {
+            "id": "logo",
+            "nome": "Logo e identidade visual",
+            "rotulo": "",
+            "palavras": "logo, logotipo, logomarca, marca, identidade visual, paleta de cores, cores da marca, criar logo, nao tenho logo",
+            "resposta": "Se você já tem logo e cores, eu uso no site. Se não tem, consigo sugerir uma paleta e aplicá-la no site. A criação completa de logo é um serviço à parte, combinado no orçamento.",
+            "link": ""
+        },
+        {
+            "id": "copywriting",
+            "nome": "Escrita dos textos",
+            "rotulo": "",
+            "palavras": "textos de venda, copy, copywriting, escrever textos, redacao, texto para o site, textos que vendem, quem escreve, quem escreve os textos, quem faz os textos, quem faz o texto, voces escrevem, voce escreve, quem faz a redacao",
+            "resposta": "Escrevo os textos do site com foco em clareza e em levar o cliente a chamar no WhatsApp. Você revisa tudo antes da publicação.",
+            "link": ""
+        },
+        {
+            "id": "o_que_faz",
+            "nome": "O que você faz",
+            "rotulo": "Serviços",
+            "palavras": "o que voce faz, que tipo de site, quais servicos, o que oferece, que servicos, faz o que, trabalha com que",
+            "resposta": "Crio sites institucionais, landing pages (páginas de venda), formulários de contato e orçamento, e cuido de domínio, hospedagem e manutenção. Veja a seção Serviços.",
+            "link": "#servicos"
+        },
+        {
+            "id": "landing",
+            "nome": "Landing page",
+            "rotulo": "",
+            "palavras": "landing page, pagina de vendas, pagina unica, one page, pagina de campanha, pagina para anuncio",
+            "resposta": "Landing page é uma página focada em uma oferta, com um botão de contato bem visível. Funciona bem para campanhas e anúncios. Posso criar uma para o seu negócio.",
+            "link": ""
+        },
+        {
+            "id": "loja_virtual",
+            "nome": "Loja virtual",
+            "rotulo": "",
+            "palavras": "loja virtual, e-commerce, ecommerce, vender online, carrinho, pagamento online, vender produtos, loja online, vender produto, vender pelo site, vender no site",
+            "resposta": "Faço sites de apresentação e formulários de pedido. Uma loja virtual completa, com carrinho e pagamento online, é outro tipo de projeto. Me conte o que você quer vender e eu indico a melhor opção.",
+            "link": ""
+        },
+        {
+            "id": "agendamento",
+            "nome": "Agendamento online",
+            "rotulo": "",
+            "palavras": "agendamento, agendar, agendar online, marcar horario, marcar consulta, reserva, reservas, calendario, agenda online, marque horario, cliente marque, marcar hora, agendar horario",
+            "resposta": "Consigo montar uma página com botão de agendamento, que leva ao WhatsApp ou a uma ferramenta de agenda. A integração completa com a sua agenda depende do sistema que você usa. Me conte qual é.",
+            "link": ""
+        },
+        {
+            "id": "formulario",
+            "nome": "Formulário de orçamento",
+            "rotulo": "",
+            "palavras": "formulario, orcamento online, pedido pelo site, cadastro no site, formulario de contato, pedido online, botao de orcamento, botao orcamento, botao de pedido, formulario de orcamento",
+            "resposta": "Sim. Os formulários de orçamento e contato enviam a mensagem direto para o e-mail do dono do negócio, e o cliente ainda pode ser atendido pelo WhatsApp.",
+            "link": ""
+        },
+        {
+            "id": "whatsapp_botao",
+            "nome": "Botão do WhatsApp",
+            "rotulo": "",
+            "palavras": "botao whatsapp, whatsapp no site, link do whatsapp, contato pelo whatsapp, chamar no whatsapp, whatsapp, ligar direto, ligar pelo site, botao de ligar, botao para ligar, telefone no site, clicar para ligar, tem como ligar, botao de telefone",
+            "resposta": "Pelo site, o jeito mais rápido de falar comigo é o botão de WhatsApp em destaque, com uma mensagem pronta. Um botão de ligação direta não faz parte do modelo padrão, mas posso incluir se você quiser.",
+            "link": ""
+        },
+        {
+            "id": "mapa",
+            "nome": "Mapa e localização",
+            "rotulo": "",
+            "palavras": "mapa, google maps, localizacao, endereco do negocio, meu endereco, como chegar, rota, onde fica, onde voce fica",
+            "resposta": "Dá para incluir um mapa com o endereço e um botão para abrir a rota no celular. Basta me passar o endereço completo.",
+            "link": ""
+        },
+        {
+            "id": "blog",
+            "nome": "Blog e artigos",
+            "rotulo": "",
+            "palavras": "blog, noticias, artigos, postagens, publicar textos, conteudo no blog",
+            "resposta": "Posso incluir uma área de blog para publicar artigos. Com o tempo, textos úteis para o seu cliente ajudam o site a ser encontrado no Google.",
+            "link": ""
+        },
+        {
+            "id": "galeria",
+            "nome": "Galeria de fotos",
+            "rotulo": "",
+            "palavras": "galeria, fotos dos trabalhos, fotos do ambiente, fotos dos produtos, fotos do cardapio, mostrar fotos, album",
+            "resposta": "Sim, dá para criar uma galeria com fotos dos seus produtos, trabalhos ou do ambiente, com imagens otimizadas para carregar rápido no celular.",
+            "link": ""
+        },
+        {
+            "id": "idiomas",
+            "nome": "Outro idioma",
+            "rotulo": "",
+            "palavras": "ingles, idioma, outro idioma, espanhol, traducao, multilingue, em ingles, versao em ingles",
+            "resposta": "Faço sites em português. Se precisar de outro idioma, consigo incluir uma versão, combinada no orçamento.",
+            "link": ""
+        },
+        {
+            "id": "redes_sociais",
+            "nome": "Redes sociais",
+            "rotulo": "",
+            "palavras": "instagram, redes sociais, facebook, tiktok, rede social, linkar redes, integrar instagram, fotos do instagram",
+            "resposta": "Dá para colocar links e ícones das redes sociais no site. Mostrar as fotos do Instagram automaticamente depende de ferramentas extras, então combinamos antes.",
+            "link": ""
+        },
+        {
+            "id": "google_meu_negocio",
+            "nome": "Perfil da Empresa no Google",
+            "rotulo": "",
+            "palavras": "vai aparecer no google, aparecer no google, google meu negocio, perfil do google, google business, ficha do google, aparecer no google maps, google maps do negocio, conta no google, ter conta no google, conta do google, criar conta no google, perfil no google, perfil da empresa",
+            "resposta": "O Perfil da Empresa no Google (antigo Google Meu Negócio) é a ficha que aparece no Google Maps e nas buscas locais. Ajudo a configurar e a conectar com o site, mas o perfil precisa ser criado e verificado pelo dono do negócio.",
+            "link": ""
+        },
+        {
+            "id": "seo",
+            "nome": "Aparecer no Google",
+            "rotulo": "Aparecer nas buscas",
+            "palavras": "google, aparece no google, aparece nas buscas, aparecer nas buscas, aparecer nas pesquisas, aparece no buscador, aparecer no buscador, primeiro no google, buscador, buscas, mecanismos de busca, ranquear, posicao no google, otimizacao, seo, encontrado no google, ser encontrado",
+            "resposta": "O site já sai preparado para o Google: título, descrição, endereço limpo, velocidade e versão para celular. Aparecer nas primeiras posições depende de tempo, conteúdo e concorrência, então não prometo uma posição fixa.",
+            "link": ""
+        },
+        {
+            "id": "seo_local",
+            "nome": "SEO local",
+            "rotulo": "",
+            "palavras": "bairro, cidade, perto de mim, da regiao, na regiao, seo local, buscas locais, regiao da sua cidade, quando buscam, quando pesquisam, buscam em, pesquisam em, na minha cidade, no meu bairro, no bairro",
+            "resposta": "Coloco cidade e bairros nos títulos e textos, para o site aparecer nas buscas da sua região. Quanto mais completo o seu Perfil da Empresa no Google, melhor.",
+            "link": ""
+        },
+        {
+            "id": "search_console",
+            "nome": "Google Search Console",
+            "rotulo": "",
+            "palavras": "search console, google search console, indexar, indexacao, sitemap, mapa do site, verificar no google",
+            "resposta": "O site já tem o mapa do site (sitemap) e um arquivo robots.txt, que ajudam o Google a encontrar as páginas. O Google Search Console é uma ferramenta gratuita do Google, que você pode usar para acompanhar o site. Se quiser ajuda com isso, combine comigo no orçamento. Nada disso garante uma posição nas buscas.",
+            "link": ""
+        },
+        {
+            "id": "anuncios",
+            "nome": "Anúncios pagos",
+            "rotulo": "",
+            "palavras": "anuncios, trafego pago, google ads, facebook ads, impulsionar, campanha paga, meta ads, faz anuncio, anuncio no google, anuncios no google, anuncio pago, propaganda no google, anunciar no google, publicidade no google, propaganda paga",
+            "resposta": "Não faço gestão de anúncios pagos. O site fica preparado para receber visitas de campanhas, e posso indicar profissionais se você precisar.",
+            "link": ""
+        },
+        {
+            "id": "celular",
+            "nome": "Funciona no celular",
+            "rotulo": "",
+            "palavras": "celular, mobile, responsivo, tablet, computador, adaptado, funciona no celular, no celular",
+            "resposta": "Todo site é criado primeiro para o celular e depois adaptado para tablet e computador. É pelo celular que muita gente procura um serviço perto de casa.",
+            "link": ""
+        },
+        {
+            "id": "velocidade",
+            "nome": "Velocidade do site",
+            "rotulo": "",
+            "palavras": "rapido, velocidade, carrega devagar, lento, desempenho, demora para abrir, pesado",
+            "resposta": "Uso imagens otimizadas e um layout leve, para o site abrir rápido mesmo na internet do celular. A velocidade final também depende do plano de hospedagem escolhido.",
+            "link": ""
+        },
+        {
+            "id": "dominio",
+            "nome": "Domínio (endereço do site)",
+            "rotulo": "",
+            "palavras": "dominio, nome do site, endereco do site, endereco do meu site, mudar o endereco, mudar endereco, trocar o endereco, mudar o dominio, trocar dominio, .com.br, registrar dominio, comprar dominio, meu dominio, url, renovar, renovacao, anual, pagar pelo dominio, valor do dominio, quanto custa o dominio, pagar anual pelo dominio",
+            "resposta": "Compro e configuro o domínio, como seunegocio.com.br. O domínio fica em seu nome, e a renovação anual fica incluída na manutenção enquanto o contrato estiver vigente.",
+            "link": ""
+        },
+        {
+            "id": "dominio_existente",
+            "nome": "Já tenho domínio",
+            "rotulo": "",
+            "palavras": "ja tenho dominio, tenho dominio, usar meu dominio, dominio que ja tenho, domino que comprei",
+            "resposta": "Pode usar o domínio que você já tem. Eu configuro o apontamento para o novo site, cuidando para não afetar os seus e-mails.",
+            "link": ""
+        },
+        {
+            "id": "hospedagem",
+            "nome": "Hospedagem",
+            "rotulo": "",
+            "palavras": "hospedagem, servidor, onde fica o site, hospedar, hosting, onde o site fica, onde fica hospedado, 24 horas, no ar, fica no ar, fora do ar, disponivel 24",
+            "resposta": "A hospedagem é onde o site fica publicado. Ela fica por minha conta, com servidores no Brasil, e está incluída na mensalidade.",
+            "link": ""
+        },
+        {
+            "id": "ssl",
+            "nome": "Certificado SSL (cadeado)",
+            "rotulo": "",
+            "palavras": "ssl, https, cadeado, certificado, site seguro, conexao segura, seguro para o cliente",
+            "resposta": "Sim. O site tem certificado SSL (HTTPS), o cadeado do navegador. Ele protege os dados enviados pelo formulário.",
+            "link": ""
+        },
+        {
+            "id": "email_profissional",
+            "nome": "E-mail profissional",
+            "rotulo": "",
+            "palavras": "email profissional, email com meu dominio, email do meu dominio, caixa de email, email da empresa, contato@, criar email, pode criar email, email personalizado, conta de email com meu dominio, email no meu dominio",
+            "resposta": "Posso configurar um e-mail com o seu domínio, como contato@seunegocio.com.br, para ficar mais profissional. Isso pode ter custo extra, dependendo do plano de hospedagem.",
+            "link": ""
+        },
+        {
+            "id": "plataforma",
+            "nome": "Plataforma e tecnologia",
+            "rotulo": "",
+            "palavras": "wordpress, wix, squarespace, shopify, construtor, plataforma, ferramenta, tecnologia, o que usa",
+            "resposta": "Faço sites sob medida em HTML, CSS e JavaScript, pensados para o seu negócio e para o celular.",
+            "link": ""
+        },
+        {
+            "id": "codigo_propriedade",
+            "nome": "Acesso e propriedade do site",
+            "rotulo": "",
+            "palavras": "codigo, codigo fonte, quem e dono, o site e meu, vai ser meu, sera meu, fica comigo, e meu, de quem e, fica no meu nome, propriedade, acesso ao site, senha do site, minha conta, fico com o site, eu fico com o site, ficar com o site, sou dono, eu sou o dono, dono do site, fico com o codigo, entregar o codigo, o site e de quem",
+            "resposta": "Depende do modelo. No de desenvolvimento, o código e o design passam a ser seus depois do pagamento total. No de assinatura, o site é licenciado enquanto a mensalidade estiver em dia. Os detalhes estão no contrato.",
+            "link": ""
+        },
+        {
+            "id": "migrar",
+            "nome": "Refazer um site antigo",
+            "rotulo": "",
+            "palavras": "migrar, trocar de site, site antigo, atualizar site antigo, refazer site, ja tenho site, melhorar meu site",
+            "resposta": "Sim. Posso refazer um site antigo, aproveitando o que for útil, como textos, fotos e o domínio, e trocando o que estiver desatualizado.",
+            "link": ""
+        },
+        {
+            "id": "backup",
+            "nome": "Segurança e backup",
+            "rotulo": "",
+            "palavras": "seguranca, hacker, invadido, ataque, proteção, proteger o site, vírus, malware, se o site for invadido, site invadido, hackearem, hackeado, o site cair",
+            "resposta": "O site usa conexão criptografada (HTTPS), limite de tentativas de envio no formulário e acesso restrito aos arquivos do servidor. Na manutenção, faço backup do site toda semana e guardo as cópias das últimas 4 semanas. Nenhum site é totalmente livre de riscos, mas essas medidas reduzem bastante o perigo.",
+            "link": ""
+        },
+        {
+            "id": "backup_manutencao",
+            "nome": "Backup do site",
+            "rotulo": "",
+            "palavras": "backup, backups, copia de seguranca, copias de seguranca, copia do site, perder o site, perder dados, perder o conteudo, perder as informacoes",
+            "resposta": "Sim. Na manutenção, faço backup do site pelo menos uma vez por semana e guardo as cópias das últimas 4 semanas. Se algo der errado, o site volta a partir da cópia mais recente.",
+            "link": ""
+        },
+        {
+            "id": "manutencao_inclui",
+            "nome": "O que a manutenção inclui",
+            "rotulo": "",
+            "palavras": "o que inclui a manutencao, o que a manutencao faz, manutencao inclui, cuidam das fotos, cuidam do site, atualizar fotos, atualizar videos, trocar fotos, trocar foto, mudar foto, atualizar precos, trocar precos, mudar precos, atualizar catalogo, catalogo, fotos e videos, manutencao mensal",
+            "resposta": "A manutenção inclui hospedagem, renovação do domínio, backup semanal, suporte técnico e atualizações de textos, fotos, preços, horários e contatos, até 2 horas ou 3 pedidos simples por mês. Novas páginas, novas funções e mudança completa de design são orçadas à parte.",
+            "link": ""
+        },
+        {
+            "id": "acessibilidade",
+            "nome": "Acessibilidade",
+            "rotulo": "",
+            "palavras": "acessibilidade, deficiencia, leitor de tela, deficiente visual, cego, daltonico, contraste",
+            "resposta": "O site segue boas práticas de acessibilidade: contraste adequado, textos alternativos nas imagens, navegação pelo teclado e títulos organizados.",
+            "link": ""
+        },
+        {
+            "id": "ia",
+            "nome": "Uso de inteligência artificial",
+            "rotulo": "",
+            "palavras": "inteligencia artificial, ia, chatgpt, usa ia, feito com ia, com inteligencia artificial",
+            "resposta": "Uso inteligência artificial para agilizar a produção e revisar textos. Eu decido o design e reviso cada texto antes de publicar.",
+            "link": ""
+        },
+        {
+            "id": "privacidade",
+            "nome": "Política de privacidade",
+            "rotulo": "Política de privacidade",
+            "palavras": "politica de privacidade, privacidade, lgpd, dados pessoais, lei de protecao de dados, lei geral de protecao, responsavel pelos dados, responsavel pelo site, quem e o responsavel, quem cuida dos dados, responsavel pelos meus dados",
+            "resposta": "A Política de Privacidade explica quais dados coletamos, por que, por quanto tempo guardamos e como você exerce seus direitos, conforme a LGPD. O responsável pelos dados é o Seu Nome Completo, pelo e-mail {email}.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "dados_coletados",
+            "nome": "Quais dados são coletados",
+            "rotulo": "",
+            "palavras": "quais dados, o que coletam, coleta de dados, que dados vocês guardam, dados que voces guardam, o que guardam, voces guardam meus dados, guardam meus dados, guardam dados, guardam os dados, salvam meus dados, armazenam dados, voces guardam, guardam informacoes",
+            "resposta": "Só o que você escreve no formulário: nome, WhatsApp ou e-mail, a mensagem e, se quiser, o ramo do negócio e se já tem site. Para limitar envios repetidos, usamos um código anônimo calculado a partir do endereço IP; o endereço em si não é guardado.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "venda_dados",
+            "nome": "Venda ou compartilhamento de dados",
+            "rotulo": "",
+            "palavras": "vendem meus dados, vender dados, compartilham, repassam, terceiros, passam meus dados, dados para empresas",
+            "resposta": "Não vendemos nem alugamos dados. Eles são usados só para responder ao seu pedido e ficam com fornecedores de hospedagem e de e-mail, que seguem as mesmas regras.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "excluir_dados",
+            "nome": "Excluir meus dados",
+            "rotulo": "",
+            "palavras": "excluir meus dados, excluo meus dados, excluir dados, apagar dados, exclusao de dados, pedir exclusao, quero excluir, apagar minhas informacoes, excluir minhas informacoes, apagar meus dados, remover meus dados, deletar, direito ao esquecimento, tirar meus dados, excluir mensagem, quero que apaguem, apaguem meus dados, apaguem os dados, que apaguem, apagar tudo",
+            "resposta": "Você pode pedir a exclusão a qualquer momento. Escreva para {email} com o assunto \"Privacidade\" e eu apago o que estiver guardado sobre você.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "cookies",
+            "nome": "Cookies e rastreamento",
+            "rotulo": "",
+            "palavras": "cookie, cookies, rastreamento, rastrear, google analytics, pixel, anuncio segue, me seguem, monitoram",
+            "resposta": "O site não usa cookies. As fontes são carregadas do próprio site, sem serviços de terceiros.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "ip",
+            "nome": "Endereço IP",
+            "rotulo": "",
+            "palavras": "endereco de ip, meu ip, ip, localizacao do visitante, saber onde estou, rastrear localizacao",
+            "resposta": "O endereço IP é usado só para limitar envios repetidos: o formulário aceita até 3 mensagens por hora por endereço. Na contagem de cliques, o IP nem é guardado, só um código temporário que troca todo dia. Não usamos o IP para localizar visitantes.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "direitos",
+            "nome": "Meus direitos (LGPD)",
+            "rotulo": "",
+            "palavras": "meus direitos, direito, direitos, acessar meus dados, corrigir meus dados, portabilidade, revogar consentimento, confirmacao de dados",
+            "resposta": "Você pode pedir acesso, correção, exclusão, portabilidade e revogação do consentimento. Escreva para {email} com o assunto \"Privacidade\". Respondo em até 15 dias.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "reclamacao",
+            "nome": "Reclamação à ANPD",
+            "rotulo": "",
+            "palavras": "reclamar, reclamacao, denuncia, anpd, autoridade, queixa, nao gostei da resposta",
+            "resposta": "Se não ficar satisfeito com a resposta, você pode fazer uma reclamação à Autoridade Nacional de Proteção de Dados (ANPD), em gov.br/anpd.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "menores",
+            "nome": "Crianças e adolescentes",
+            "rotulo": "",
+            "palavras": "crianca, criancas, menor, menores, adolescente, meu filho, minha filha, filho enviou",
+            "resposta": "O site não é direcionado a menores de 18 anos. Se um menor enviou dados pelo formulário, escreva para {email} para que eles sejam apagados.",
+            "link": "politica-de-privacidade.php"
+        },
+        {
+            "id": "quem_e",
+            "nome": "Quem é o desenvolvedor",
+            "rotulo": "",
+            "palavras": "quem e voce, quem e o desenvolvedor, sobre voce, sobre o desenvolvedor, quem faz, experiencia, quem esta por tras",
+            "resposta": "Sou Seu Nome, desenvolvedor web. Crio sites e landing pages para empresas e profissionais de todo o Brasil. Veja a seção Sobre para mais detalhes.",
+            "link": "#sobre"
+        },
+        {
+            "id": "atendimento_cidade",
+            "nome": "Atendimento em todo o Brasil",
+            "rotulo": "",
+            "palavras": "atende, atendem, cidade, regiao, fora da sua cidade, outra cidade, remoto, presencial, de longe, sao paulo, santa catarina, outro estado, sua cidade, floripa",
+            "resposta": "Estou em Sua Cidade (UF) e atendo clientes de todo o Brasil, por videochamada e WhatsApp. Me conte onde fica o seu negócio e como você costuma atender.",
+            "link": ""
+        },
+        {
+            "id": "horario",
+            "nome": "Horário de atendimento",
+            "rotulo": "",
+            "palavras": "horario de atendimento, que horas, atende quando, fim de semana, domingo, sabado, horario comercial",
+            "resposta": "Respondo pedidos de orçamento pelo WhatsApp e pelo e-mail em até 24 horas úteis. No suporte da manutenção, o atendimento é de segunda a sexta, das 8h às 18h (horário de Brasília).",
+            "link": ""
+        },
+        {
+            "id": "contato",
+            "nome": "Como falar com você",
+            "rotulo": "Falar no WhatsApp",
+            "palavras": "contato, telefone, falar com voce, como entro em contato, como falo com voce, numero, e-mail de contato",
+            "resposta": "O jeito mais rápido é o WhatsApp, pelo botão em destaque do site. Também atendo por e-mail em {email}.",
+            "link": "#contato"
+        },
+        {
+            "id": "ligacao",
+            "nome": "Ligação ou reunião",
+            "rotulo": "",
+            "palavras": "ligar, ligacao, chamada de voz, videochamada, reuniao, call, conversar por video, bate papo, por telefone, pelo telefone, telefone, pode ser por telefone, por ligacao",
+            "resposta": "Posso marcar uma conversa por videochamada ou ligação, para entender o seu negócio com calma. Peça pelo WhatsApp.",
+            "link": ""
+        },
+        {
+            "id": "cancelamento",
+            "nome": "Cancelamento e reembolso",
+            "rotulo": "",
+            "palavras": "garantia, reembolso, devolver dinheiro, se nao gostar, cancelar, cancelamento, desistir, desistencia, devolucao do dinheiro, devolver o dinheiro, devolucao, pedir o dinheiro de volta",
+            "resposta": "Depois de 12 meses de fidelidade, dá para cancelar com 30 dias de aviso, sem multa, desde que as faturas estejam em dia. Antes disso, há multa de 20% das mensalidades que faltariam até o fim da fidelidade. Se você desistir durante a criação, a entrada já paga não é devolvida, porque cobre o trabalho feito. Depois do aceite final, corrijo sem custo, por 90 dias, defeitos de execução do que foi aprovado.",
+            "link": ""
+        },
+        {
+            "id": "contrato",
+            "nome": "Contrato",
+            "rotulo": "",
+            "palavras": "contrato, documento, assinatura, termo, acordo, por escrito, formalizar, proposta por escrito, mandar proposta, enviar proposta, proposta escrita, proposta formal",
+            "resposta": "Depois que o orçamento for aceito, envio o contrato por escrito, em um de dois modelos: desenvolvimento (com pagamento inicial e mensalidade) ou assinatura (sem taxa de criação, com mensalidade). O contrato define escopo, prazo, pagamento e regras de cancelamento. Posso enviar para você avaliar.",
+            "link": ""
+        },
+        {
+            "id": "suporte",
+            "nome": "Suporte depois do site pronto",
+            "rotulo": "",
+            "palavras": "depois de pronto, suporte, ajuda depois, pos venda, duvidas depois, quando der problema, apos a entrega, depois da entrega, ajudam se tiver problema, se tiver problema, se der problema, se der erro, se o site cair, se o site sair do ar, se algo quebrar, depois de pronto voces ajudam, voces ajudam, vocês ajudam",
+            "resposta": "Depois da publicação, o suporte da manutenção é de segunda a sexta, das 8h às 18h (horário de Brasília), com resposta em até 48 horas úteis. Nos 90 dias após o aceite final, defeitos de execução do que foi aprovado são corrigidos sem custo.",
+            "link": ""
+        },
+        {
+            "id": "area_restrita",
+            "nome": "Área do cliente e login",
+            "rotulo": "",
+            "palavras": "area do cliente, login, cadastro de usuario, area restrita, area logada, conta do cliente, senha do cliente",
+            "resposta": "Sites institucionais e de captação de clientes normalmente não têm área de login. Se o seu projeto precisar de área restrita, combinamos a funcionalidade no orçamento.",
+            "link": ""
+        },
+        {
+            "id": "chatbot",
+            "nome": "Chat e atendimento automático",
+            "rotulo": "",
+            "palavras": "chatbot, chat, robo, atendimento automatico, atendimento com ia, chat ao vivo, assistente virtual",
+            "resposta": "O site tem um assistente que responde às dúvidas mais comuns. Para um atendimento personalizado, a conversa continua pelo WhatsApp.",
+            "link": ""
+        },
+        {
+            "id": "video",
+            "nome": "Vídeos no site",
+            "rotulo": "",
+            "palavras": "video, videos, youtube, incluir video, video de apresentacao, video na pagina",
+            "resposta": "Dá para incluir vídeos do YouTube ou vídeos próprios na página. Vídeos pesados podem deixar o site lento, então eu cuido para carregarem sem atrapalhar.",
+            "link": ""
+        },
+        {
+            "id": "newsletter",
+            "nome": "Captação de e-mails (newsletter)",
+            "rotulo": "",
+            "palavras": "newsletter, lista de email, lista de e-mails, cadastrar email, assinar, receber novidades, captar emails",
+            "resposta": "Dá para incluir um formulário para o visitante deixar o e-mail e receber novidades. Para enviar os e-mails em massa, você precisa de uma ferramenta própria, que eu posso indicar.",
+            "link": ""
+        },
+        {
+            "id": "busca_interna",
+            "nome": "Busca dentro do site",
+            "rotulo": "",
+            "palavras": "pesquisa no site, busca no site, buscar no site, campo de busca, pesquisar no site, procurar no site",
+            "resposta": "Sites com poucas páginas normalmente não precisam de busca interna. Se o seu tiver muito conteúdo, como um blog grande ou um catálogo, dá para incluir.",
+            "link": ""
+        },
+        {
+            "id": "evento",
+            "nome": "Site para evento ou casamento",
+            "rotulo": "",
+            "palavras": "casamento, evento, festa, convite, aniversario, formatura, congresso, workshop, site para casamento, site de casamento, site para festa, site de evento, site para evento, faz site para casamento, site para formatura, site para aniversario, buffet, noivos, casamentos",
+            "resposta": "Sim, dá para criar um site para evento ou casamento, com a história, o local, a programação e a confirmação de presença pelo formulário.",
+            "link": ""
+        },
+        {
+            "id": "cardapio_digital",
+            "nome": "Cardápio digital e QR code",
+            "rotulo": "",
+            "palavras": "cardapio, cardapio digital, menu digital, qr code, qrcode, cardapio online, lista de precos do restaurante",
+            "resposta": "Sim. Dá para montar o cardápio no site, com fotos e preços, e gerar um QR code para o cliente acessar pela mesa ou pela fachada.",
+            "link": ""
+        },
+        {
+            "id": "segmentos",
+            "nome": "Atende o meu ramo?",
+            "rotulo": "Para quem é",
+            "palavras": "site para o meu negocio, meu ramo, meu segmento, tipo de negocio, restaurante, barbearia, clinica, salao, oficina, advocacia, advogado, engenheiro, designer, fotografo, academia, pet, contador, dentista, esteticista, atende restaurante, atende clinica, atende salao, atende oficina, atende advogado, voces atendem, atende o meu, atende meu, voce atende, atende, para quem e, para quem e o site, quem voce atende, para quem voce faz site",
+            "resposta": "Atendo empresas e profissionais de vários ramos, como restaurantes e lanchonetes, clínicas e consultórios, salões e barbearias, oficinas e autopeças, advocacias, engenheiros e arquitetos, designers e fotógrafos, academias e personal trainers, pet shops e veterinários, contadores e consultores, lojas e comércio local, e esteticistas. Me conte o seu ramo que eu mostro como o site ficaria.",
+            "link": "#para-quem"
+        },
+        {
+            "id": "app",
+            "nome": "Aplicativo para celular",
+            "rotulo": "",
+            "palavras": "aplicativo, app, android, ios, play store, app store, baixar no celular, instalar no celular",
+            "resposta": "Não faço aplicativos para instalar no celular. Faço sites que funcionam muito bem no navegador do celular, sem precisar de instalação.",
+            "link": ""
+        },
+        {
+            "id": "social_saudacao",
+            "nome": "Saudação",
+            "rotulo": "",
+            "palavras": "oi, ola, bom dia, boa tarde, boa noite, e ai, oii",
+            "resposta": "Olá! Posso responder dúvidas sobre preço, prazo, processo, Google, hospedagem e privacidade. O que você quer saber?",
+            "link": ""
+        },
+        {
+            "id": "social_agradecimento",
+            "nome": "Agradecimento",
+            "rotulo": "",
+            "palavras": "obrigado, obrigada, valeu, brigado, legal, show, perfeito, ok, beleza",
+            "resposta": "Por nada! Se quiser, pergunte mais alguma coisa ou chame no WhatsApp para conversar sobre o seu projeto.",
+            "link": ""
+        }
+    ]
+}

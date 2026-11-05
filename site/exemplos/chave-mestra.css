@@ -1,0 +1,188 @@
+/* Chave Mestra — oficina mecânica. Cores tiradas de style.css (.ce-oficina):
+   grafite, amarelo de sinalização e a faixa zebrada. */
+:root {
+  --cor-fundo: #efede8;     /* cimento claro: seções claras */
+  --cor-texto: #1a1c1f;     /* grafite quase preto, tinta principal */
+  --cor-marca: #23262b;     /* grafite: faixa de serviços */
+  --cor-destaque: #ffc61a;  /* amarelo de sinalização: botão, preços, selo */
+  --cor-suave: #464b53;     /* texto secundário no claro (7,6:1) */
+  --cor-capa: #2f3339;      /* grafite da capa */
+  --cor-claro: #d8dade;     /* texto no escuro */
+  --cor-claro-suave: #a9aeb6; /* texto secundário no escuro (6,7:1) */
+  --cor-papel: #fbfaf6;     /* papel do orçamento */
+  --cor-pedra: #e2dfd8;     /* fundo do contato */
+  --cor-rodape: #1a1c1f;
+}
+
+::selection { background: var(--cor-destaque); color: var(--cor-texto); }
+
+h1, h2, h3 { color: var(--cor-texto); text-wrap: balance; }
+h2 {
+  font-size: 1.5rem; font-weight: 900; line-height: 1.05; margin-bottom: 18px;
+  text-transform: uppercase; letter-spacing: -.01em;
+}
+p { text-wrap: pretty; }
+
+.oculto {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip-path: inset(50%); white-space: nowrap;
+}
+
+/* faixa zebrada de sinalização (identidade da oficina) */
+.capa::before, .rodape::before {
+  content: ''; position: absolute; left: 0; right: 0; height: 10px;
+  background: repeating-linear-gradient(-45deg, var(--cor-destaque) 0 10px, var(--cor-texto) 10px 20px);
+}
+
+/* ---------- menu ---------- */
+.menu { background: var(--cor-rodape); color: #fff; }
+.logo {
+  display: inline-flex; align-items: center; gap: 9px;
+  font-weight: 900; text-transform: uppercase; letter-spacing: .02em; font-size: 1.0625rem;
+}
+.logo-selo {
+  display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 5px;
+  background: var(--cor-destaque); color: var(--cor-texto); font-size: .8125rem; font-weight: 900; letter-spacing: -.02em;
+}
+.menu-nav { display: flex; gap: 18px; font-size: .875rem; font-weight: 600; color: var(--cor-claro); }
+
+/* ---------- botão ---------- */
+.bt {
+  border-radius: 4px; padding: 13px 22px;
+  background: var(--cor-destaque); color: var(--cor-texto);
+  font-weight: 800; text-transform: uppercase; letter-spacing: .05em; font-size: .9375rem;
+}
+.bt-escuro { background: var(--cor-texto); color: var(--cor-destaque); }
+
+/* ---------- capa ---------- */
+.capa {
+  position: relative; padding-top: 32px; padding-bottom: 26px;
+  background: var(--cor-capa); color: var(--cor-claro);
+}
+.capa::before { top: 0; }
+.capa h1 {
+  font-size: 2.125rem; font-weight: 900; line-height: 1; letter-spacing: -.02em;
+  text-transform: uppercase; color: #fff; margin-bottom: 14px;
+}
+.capa-texto { max-width: 34ch; font-size: 1rem; color: var(--cor-claro); margin-bottom: 16px; }
+
+/* o orçamento em papel: a promessa da capa mostrada como prova */
+.os {
+  margin-bottom: 18px; padding: 12px 14px 10px; border-radius: 4px;
+  background: var(--cor-papel); color: var(--cor-texto);
+  border-left: 6px solid var(--cor-destaque);
+}
+.os-topo {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 8px;
+  margin-bottom: 8px; font-size: .875rem; color: var(--cor-suave);
+}
+.os-topo strong { font-size: .9375rem; color: var(--cor-texto); }
+.os-itens { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.os-itens th, .os-itens td { padding: 4px 0; font-size: .875rem; border-bottom: 1px dashed #b9b5ac; }
+.os-itens th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.os-itens td { text-align: right; font-weight: 700; white-space: nowrap; }
+.os-itens tfoot th, .os-itens tfoot td { border-bottom: 0; padding-top: 8px; font-size: 1.125rem; font-weight: 900; color: var(--cor-texto); }
+.os-aprova {
+  display: flex; align-items: center; gap: 8px; margin: 6px 0 0;
+  font-size: .8125rem; font-weight: 600; color: var(--cor-suave);
+}
+.caixa { position: relative; width: 18px; height: 18px; border: 2px solid var(--cor-texto); border-radius: 2px; }
+.caixa::after {
+  content: ''; position: absolute; left: 4px; top: 0; width: 5px; height: 10px;
+  border: solid #1e7a3c; border-width: 0 3px 3px 0; transform: rotate(45deg);
+}
+
+/* ---------- como funciona ---------- */
+.passos { padding-top: 26px; padding-bottom: 26px; }
+.passos-lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.passos-lista li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; }
+.passo-num {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 4px;
+  background: var(--cor-texto); color: var(--cor-destaque);
+  font-size: 1.5rem; font-weight: 900; font-variant-numeric: tabular-nums;
+}
+.passos h3 { font-size: 1.0625rem; font-weight: 800; margin: 0 0 2px; }
+.passos li p { margin: 0; font-size: .9375rem; line-height: 1.4; color: var(--cor-suave); }
+
+/* ---------- serviços (faixa escura) ---------- */
+.servicos {
+  position: relative; overflow: hidden; padding-top: 26px; padding-bottom: 26px;
+  background: var(--cor-marca); color: var(--cor-claro);
+}
+.servicos h2 { color: #fff; }
+.servicos-chave { position: absolute; top: 8px; right: -4px; width: 76px; height: 76px; }
+.servicos-lista { list-style: none; margin: 0 0 18px; padding: 0; }
+.servicos-lista li {
+  display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  padding: 10px 0; border-bottom: 2px solid #383c43;
+}
+.servicos-lista li:last-child { border-bottom: 0; }
+.serv-nome { font-size: .875rem; line-height: 1.35; color: var(--cor-claro-suave); }
+.serv-nome strong { display: block; font-size: 1.0625rem; font-weight: 800; color: #fff; }
+.serv-preco {
+  text-align: right; white-space: nowrap; font-size: 1.25rem; font-weight: 900;
+  color: var(--cor-destaque); font-variant-numeric: tabular-nums;
+}
+.serv-preco small { display: block; font-size: .75rem; font-weight: 600; color: var(--cor-claro-suave); }
+
+.marcas { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.marcas > span {
+  padding: 5px 10px; border-radius: 4px; background: #363a41;
+  font-size: .8125rem; font-weight: 700; color: #fff;
+}
+.marcas > .marcas-titulo, .marcas > .marcas-e { padding: 5px 2px 5px 0; background: none; font-weight: 600; color: var(--cor-claro); }
+
+/* ---------- inspeção (campo amarelo) ---------- */
+.inspecao { padding-top: 26px; padding-bottom: 24px; background: var(--cor-destaque); }
+.inspecao h2 { font-size: 1.875rem; margin-bottom: 8px; }
+.inspecao-texto { max-width: 32ch; font-size: .9375rem; color: var(--cor-texto); margin-bottom: 16px; }
+.checklist {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px;
+}
+.checklist li {
+  display: flex; align-items: center; gap: 8px; padding: 1px 0;
+  font-size: .875rem; font-weight: 600; color: var(--cor-texto);
+}
+/* "visto" desenhado com duas bordas, como na tela original */
+.checklist li::before {
+  content: ''; flex-shrink: 0; width: 6px; height: 11px; margin: 0 3px 3px 2px;
+  border: solid var(--cor-texto); border-width: 0 2.5px 2.5px 0; transform: rotate(45deg);
+}
+
+/* ---------- depoimento ---------- */
+.depoimento { padding-top: 26px; padding-bottom: 24px; }
+.depoimento figure { margin: 0; }
+.aspas { width: 32px; height: 24px; margin-bottom: 12px; }
+.depoimento blockquote { margin: 0 0 14px; }
+.depoimento blockquote p {
+  margin: 0; font-size: 1.25rem; font-weight: 700; line-height: 1.3; letter-spacing: -.01em; color: var(--cor-texto);
+}
+.depoimento figcaption { font-size: .875rem; color: var(--cor-suave); }
+.depoimento figcaption strong { display: block; font-size: 1rem; color: var(--cor-texto); }
+
+/* ---------- horário e endereço ---------- */
+.onde { background: var(--cor-pedra); padding-top: 26px; padding-bottom: 26px; }
+.horarios { width: 100%; border-collapse: collapse; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
+.horarios th, .horarios td { padding: 6px 0; border-bottom: 2px solid #cbc7be; font-size: 1rem; }
+.horarios th { text-align: left; font-weight: 500; color: var(--cor-suave); }
+.horarios td { text-align: right; font-weight: 800; color: var(--cor-texto); }
+.horarios tr:last-child th, .horarios tr:last-child td { border-bottom: 0; }
+
+.placa { width: 100%; height: auto; margin-bottom: 14px; }
+.endereco { font-size: 1rem; margin-bottom: 16px; }
+.endereco strong { font-size: 1.125rem; }
+.fone { margin: 12px 0 0; font-size: .875rem; font-weight: 600; color: var(--cor-suave); font-variant-numeric: tabular-nums; }
+
+/* ---------- rodapé ---------- */
+.rodape {
+  position: relative; background: var(--cor-rodape); color: var(--cor-claro);
+  text-align: left; padding-top: 30px; padding-bottom: 24px;
+}
+.rodape::before { top: 0; }
+.rodape p { margin-bottom: 6px; }
+.rodape-nome {
+  font-size: 1.875rem; font-weight: 900; text-transform: uppercase; letter-spacing: -.01em; line-height: 1.05;
+  color: var(--cor-destaque);
+}
+.rodape-fino { margin: 0; font-size: .8125rem; color: var(--cor-claro-suave); }
